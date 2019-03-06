@@ -12,3 +12,5 @@ The inventory has in stock:
 There are currently 2 markets to sell the bomb:
 	-The Normal Market
 	-The Black Market
+
+To be added more things
