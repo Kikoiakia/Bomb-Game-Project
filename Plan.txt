@@ -1,0 +1,14 @@
+Bomb Factory Typhoon
+You are a maker of a high quality bombs. You can make any bomb that they request you.
+You have inventory with all kind of chemicals and electronics to make bombs but it's a bit limited at first.
+	-Slots are 20
+	-Can be expanded by 10 with each upgrade
+The inventory has in stock:
+	-Black Powder (Creates small explosions. The weakest to use. Has bigger effect the more it's used)
+	-Phosphor (For creating incendiary bombs)
+	-Oxygen (For Thermobaric)
+	-Timers
+	-Gasoline
+There are currently 2 markets to sell the bomb:
+	-The Normal Market
+	-The Black Market
