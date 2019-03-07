@@ -1,4 +1,4 @@
-Bomb Factory Typhoon
+Bomb Factory Tycoon
 You are a maker of a high quality bombs. You can make any bomb that they request you.
 You have inventory with all kind of chemicals and electronics to make bombs but it's a bit limited at first.
 	-Slots are 20
