@@ -43,3 +43,9 @@ The Risk system is %risk to lose the game. You lose the game the following ways:
 	-You get caught selling on the black market and you are arested.
 	-A worker sells you out and you are arested/get killed
 	-A black market trade goes wrong
+	-When you sell at the white market your %risk gets lowered
+	-%risk gets lowered slowly if you don't sell bombs
+
+The money system is simple:
+	-You sell bombs you make money
+	-The more risk the higher the reward
