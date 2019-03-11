@@ -34,7 +34,7 @@ List of bombs you can make:
 	-Dirty bomb
 	-Atomic bomb
 	-Hydrogen bomb
-	-Easter egg bomb : Jivev special coca-cola/PC Tsar Bomb
+	-Easter egg bomb : Dzivev special coca-cola/PC Bomb (The most powerful bomb ever. One time use. Game over if you sell it)
 
 There are 3 systems in the game:
 	-Risk System

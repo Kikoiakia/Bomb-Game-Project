@@ -1,5 +1,8 @@
 11.3.2019 14:51
 	-Added ChangeLog textfile to project
 	-Almost completed Plan.txt
-	  15:02
+	15:02
 	-Added different folders for SoftUni and School
+	18:38
+	-Fixed the easter egg bomb description and usage
+	-Fixed the SoftUni and School folders
