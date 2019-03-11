@@ -43,3 +43,4 @@ The Risk system is %risk to lose the game. You lose the game the following ways:
 	-You get caught selling on the black market and you are arested.
 	-A worker sells you out and you are arested/get killed
 	-A black market trade goes wrong
+        -You run out of money
