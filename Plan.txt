@@ -50,4 +50,5 @@ The Risk system is %risk to lose the game. You lose the game the following ways:
 The money system is simple:
 	-You sell bombs you make money
 	-The more risk the higher the reward
+	-The more you sell on the black market the more money you get
 
