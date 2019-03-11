@@ -52,3 +52,7 @@ The money system is simple:
 	-The more risk the higher the reward
 	-The more you sell on the black market the more money you get
 
+The worker system is also simple:
+	-You hire workers to make bombs faster
+	-If a worker is underpaid he will add %risk to sell you out
+
