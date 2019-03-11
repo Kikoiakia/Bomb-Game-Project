@@ -2,15 +2,44 @@ Bomb Factory Tycoon
 You are a maker of a high quality bombs. You can make any bomb that they request you.
 You have inventory with all kind of chemicals and electronics to make bombs but it's a bit limited at first.
 	-Slots are 20
-	-Can be expanded by 10 with each upgrade
+	-Can be expanded by 10 with upgrades
+
 The inventory has in stock:
 	-Black Powder (Creates small explosions. The weakest to use. Has bigger effect the more it's used)
 	-Phosphor (For creating incendiary bombs)
-	-Oxygen (For Thermobaric)
+	-Hydrogen (For highest exposive)
 	-Timers
-	-Gasoline
+	-Gasoline (For molotovs/ higher explosion)
+	-Containers
+
 There are currently 2 markets to sell the bomb:
 	-The Normal Market
 	-The Black Market
 
-To be added more things
+List of bombs you can make:
+	-Hand Grenade
+	-Molotov
+	-Barrek Bomb
+	-Cluster Bomb
+	-Land mine
+	-C4
+	-Pipe Bomb
+	-Smoke bomb
+	-Flashbang
+	-Stink bomb
+	-Time bomb
+	-Suitcase bomb (black market only)
+	-Suiide vest (black market only)
+	-Dirty bomb
+	-Atomic bomb
+	-Hydrogen bomb
+
+There are 3 systems in the game:
+	-Risk System
+	-Money System
+	-Worker System
+
+The Risk system is %risk to lose the game. You lose the game the following ways:
+	-You get caught selling on the black market and you are arested.
+	-A worker sells you out and you are arested/get killed
+	-A black market trade goes wrong
