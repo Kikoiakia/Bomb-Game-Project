@@ -11,6 +11,7 @@ The inventory has in stock:
 	-Timers
 	-Gasoline (For molotovs/ higher explosion)
 	-Containers
+	-Coca-Cola
 
 There are currently 2 markets to sell the bomb:
 	-The Normal Market
