@@ -51,3 +51,7 @@ The money system is simple:
 	-You sell bombs you make money
 	-The more risk the higher the reward
 
+The worker system is also simple:
+	-You hire workers to make bombs faster
+	-If a worker is underpaid he will add %risk to sell you out
+
