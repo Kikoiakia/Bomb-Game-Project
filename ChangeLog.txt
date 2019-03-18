@@ -6,3 +6,8 @@
 	18:38
 	-Fixed the easter egg bomb description and usage
 	-Fixed the SoftUni and School folders
+13.3.2019 13:49
+	-Added few thing to Plan.txt
+	-Changed Suiide vest to Suicide vest
+18.3.2019 10:40
+	-Changed data base plan description

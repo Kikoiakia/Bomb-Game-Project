@@ -30,7 +30,7 @@ List of bombs you can make:
 	-Stink bomb
 	-Time bomb
 	-Suitcase bomb (black market only)
-	-Suiide vest (black market only)
+	-Suicide vest (black market only)
 	-Dirty bomb
 	-Atomic bomb
 	-Hydrogen bomb
@@ -58,3 +58,7 @@ The worker system is also simple:
 	-You hire workers to make bombs faster
 	-If a worker is underpaid he will add %risk to sell you out
 
+There will be data base because we will make it an online game with HTML / Flash
+	-The data base will be of user/pass system.
+
+	
