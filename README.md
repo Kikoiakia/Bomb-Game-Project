@@ -1,4 +1,4 @@
 ### SoftUni-Project ###
-This project is about a tycoon type of game!
-You are a bomb maker and you make high quality bombs that you sell.
-How far can you go until they shut you down?
+This project is for a food store. 
+Read the Plan.txt for more details
+
