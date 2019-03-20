@@ -64,3 +64,13 @@
         -made skeleton for the projekt
         -Changed FoodStore.sln
 	-Changed Plan.txt a bit to be more readable
+	   09:53
+	-Made some code 
+	# Changes to be committed:
+	#	modified:   ChangeLog.txt
+	#	modified:   Food Store/Food Store/.vs/Food Store/v15/.suo
+	#	modified:   Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide
+	#	new file:   Food Store/Food Store/StartUp/Business/ProductController.cs
+	#	new file:   Food Store/Food Store/StartUp/Data/Models/Product.cs
+	#	modified:   Food Store/Food Store/StartUp/StartUp.csproj
+	#	modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.csproj.CoreCompileInputs.cache
