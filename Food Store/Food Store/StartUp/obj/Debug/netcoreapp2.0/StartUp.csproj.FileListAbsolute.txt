@@ -9,3 +9,14 @@ E:\Kiril\Projects\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcor
 E:\Kiril\Projects\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.AssemblyInfo.cs
 E:\Kiril\Projects\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.dll
 E:\Kiril\Projects\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.pdb
+C:\Users\Vladi\Desktop\bombmaker projekt\SoftUni-Project\Food Store\Food Store\StartUp\bin\Debug\netcoreapp2.0\StartUp.deps.json
+C:\Users\Vladi\Desktop\bombmaker projekt\SoftUni-Project\Food Store\Food Store\StartUp\bin\Debug\netcoreapp2.0\StartUp.runtimeconfig.json
+C:\Users\Vladi\Desktop\bombmaker projekt\SoftUni-Project\Food Store\Food Store\StartUp\bin\Debug\netcoreapp2.0\StartUp.runtimeconfig.dev.json
+C:\Users\Vladi\Desktop\bombmaker projekt\SoftUni-Project\Food Store\Food Store\StartUp\bin\Debug\netcoreapp2.0\StartUp.dll
+C:\Users\Vladi\Desktop\bombmaker projekt\SoftUni-Project\Food Store\Food Store\StartUp\bin\Debug\netcoreapp2.0\StartUp.pdb
+C:\Users\Vladi\Desktop\bombmaker projekt\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.csprojAssemblyReference.cache
+C:\Users\Vladi\Desktop\bombmaker projekt\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.csproj.CoreCompileInputs.cache
+C:\Users\Vladi\Desktop\bombmaker projekt\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.AssemblyInfoInputs.cache
+C:\Users\Vladi\Desktop\bombmaker projekt\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.AssemblyInfo.cs
+C:\Users\Vladi\Desktop\bombmaker projekt\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.dll
+C:\Users\Vladi\Desktop\bombmaker projekt\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.pdb

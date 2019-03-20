@@ -19,6 +19,11 @@
 	-Changed README.md, Plan.txt and ChangeLog.txt acording to the new project
 	-Adjusted the github project
 	-Remade the whole project in visual studio
+----------------------------------------------------------------
+20.03.2019 09:14
+        -made skeleton for the projekt
+        -Changed FoodStore.sln
+        
 
 # Changes to be committed:
 #	modified:   ChangeLog.txt
