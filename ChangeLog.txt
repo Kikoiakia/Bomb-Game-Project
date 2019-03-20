@@ -20,9 +20,7 @@
 	-Adjusted the github project
 	-Remade the whole project in visual studio
 ----------------------------------------------------------------
-20.03.2019 09:14
-        -made skeleton for the projekt
-        -Changed FoodStore.sln
+
         
 
 # Changes to be committed:
@@ -62,3 +60,6 @@
 #	deleted:    SoftUni/Bomb Company/StartUp/obj/StartUp.csproj.nuget.g.targets
 
 ----------------------------------------------------------------------------------------------------
+20.03.2019 09:14
+        -made skeleton for the projekt
+        -Changed FoodStore.sln
