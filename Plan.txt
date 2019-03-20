@@ -4,8 +4,16 @@ Food Store Project:
 A basic food store at "Studenski Grad" district has requested you to make an app so it can run it's business smoothly
 without the need of a lot of human hand.
 Your goal is simple. Make an app that has a data bass and keep track of what is inside the store.
-You will have methods for buying a product, selling a product, resupplying an existing product, adding a new product
-,checking all available stock, list products below or up a certant price, list all products on sale and ect.
+
+You will have methods for:
+-buying a product 
+-selling a product
+-resupplying an existing product
+-adding a new product
+-checking all available stock
+-list products below or up a certant price
+-list all products on sale and ect.
+
 You can make it either a console app or an online app.
 
 Side project:
