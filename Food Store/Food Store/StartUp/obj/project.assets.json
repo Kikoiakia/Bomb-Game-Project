@@ -3684,11 +3684,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vladi\\Desktop\\bombmaker projekt\\SoftUni-Project\\Food Store\\Food Store\\StartUp\\StartUp.csproj",
+      "projectUniqueName": "C:\\Users\\Vladi\\Desktop\\food store projekt\\SoftUni-Project\\Food Store\\Food Store\\StartUp\\StartUp.csproj",
       "projectName": "StartUp",
-      "projectPath": "C:\\Users\\Vladi\\Desktop\\bombmaker projekt\\SoftUni-Project\\Food Store\\Food Store\\StartUp\\StartUp.csproj",
+      "projectPath": "C:\\Users\\Vladi\\Desktop\\food store projekt\\SoftUni-Project\\Food Store\\Food Store\\StartUp\\StartUp.csproj",
       "packagesPath": "C:\\Users\\Vladi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vladi\\Desktop\\bombmaker projekt\\SoftUni-Project\\Food Store\\Food Store\\StartUp\\obj\\",
+      "outputPath": "C:\\Users\\Vladi\\Desktop\\food store projekt\\SoftUni-Project\\Food Store\\Food Store\\StartUp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

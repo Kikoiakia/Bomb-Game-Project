@@ -20,7 +20,11 @@
 	-Adjusted the github project
 	-Remade the whole project in visual studio
 ----------------------------------------------------------------
-
+23.3.2019 16:52
+       -Changed models, 
+       -configurated DbContext,
+       -made migration with SSMS,
+       -updated database
         
 
 # Changes to be committed:
