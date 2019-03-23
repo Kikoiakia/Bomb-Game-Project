@@ -10,8 +10,8 @@ using StartUp.Data;
 namespace StartUp.Migrations
 {
     [DbContext(typeof(FoodStoreContext))]
-    [Migration("20190323145137_LastUpdate")]
-    partial class LastUpdate
+    [Migration("20190323161728_InitialConnectionToDataBase")]
+    partial class InitialConnectionToDataBase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -73,7 +73,11 @@ namespace StartUp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Name");
+                    b.Property<int>("Capacity");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(20);
 
                     b.HasKey("Id");
 

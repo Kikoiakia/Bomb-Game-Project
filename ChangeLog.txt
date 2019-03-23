@@ -30,9 +30,10 @@
 	   09:53
 	-Made some code 
 
-23.3.2019 16:52
+23.3.2019 18:20
        -Changed models, 
        -configurated DbContext,
        -made migration with SSMS,
        -updated database
-	-fixed ChangeLog.txt
+       -fixed ChangeLog.txt
+       -fixed migration bug
