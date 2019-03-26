@@ -18,9 +18,9 @@ namespace StartUp.Data.Models
         [MaxLength(25)]
         public string FullName { get; set; }
 
-        [Range(0,20000,
+        [Range(0,21000,
             ErrorMessage =
-            "Salary should be greater than 0 or equal to 0 and lower than 20000")]
+            "Salary should be greater than 0 or equal to 0 and lower than 21000")]
         public double Salary { get; set; }
 
       

@@ -17,12 +17,6 @@ namespace StartUp.Data.Models
         [MaxLength(20)]
         public string Name { get; set; }
 
-<<<<<<< HEAD
-=======
-        [Required]
-        public int Capacity { get; set; }
-        
->>>>>>> 9bf4e343a0697c491366b70eb14b206f8a9c24d9
         public List<Product> Products { get; set; }
         public List<Employee> Employees { get; set; }
     }

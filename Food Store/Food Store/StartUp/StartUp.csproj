@@ -6,16 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.3" />
-=======
-    <Compile Remove="Migrations\20190323160934_InitialConnection.cs" />
-    <Compile Remove="Migrations\20190323161204_new.cs" />
-    <Compile Remove="Migrations\20190323161636_Test.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
->>>>>>> 9bf4e343a0697c491366b70eb14b206f8a9c24d9
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.3">

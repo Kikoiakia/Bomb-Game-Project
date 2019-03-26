@@ -71,11 +71,6 @@ namespace StartUp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-<<<<<<< HEAD
-=======
-                    b.Property<int>("Capacity");
-
->>>>>>> 9bf4e343a0697c491366b70eb14b206f8a9c24d9
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(20);
