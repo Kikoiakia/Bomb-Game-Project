@@ -6,7 +6,7 @@ namespace StartUp.Data
 {
    public static class Configuration
    {
-       public const string ConnectionString = "Server=DESKTOP-9F6IC4T" +
+       public const string ConnectionString = "Server=KIRIL-LAPTOP" +
                                               "\\SQLEXPRESS;" +
                                               "Database=FoodStore;" +
                                               "Integrated Security=True";

@@ -5,13 +5,25 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.Contracts;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 
+
 namespace StartUp.Data.Models
 {
     public class Product
     {
-        
 
+        public Product()
+        {
+            
+        }
 
+        public Product(string name, double price, int stock, DateTime expiryDate, int productStoreId)
+        {
+            this.Name = name;
+            this.Price = price;
+            this.Stock = stock;
+            this.ExpiryDate = expiryDate;
+            this.ProductStoreId = productStoreId;
+        }
  
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -22,11 +34,11 @@ namespace StartUp.Data.Models
         public string Name { get; set; }
 
      
-        [Range(0, 5000, ErrorMessage = "Price should be greater than 0 or equal to 0 and lower than 5000")]
+        [Range(0, 5000, ErrorMessage = "Price should be greater than or equal to 0 and lower than 5000")]
         public double Price { get; set; }
 
         
-        [Range(0,100, ErrorMessage = "Stock should be greater than 0 or equal to 0 and lower than 100")]
+        [Range(0,100, ErrorMessage = "Stock should be greater than or equal to 0 and lower than 100")]
         public int Stock { get; set; }
 
 

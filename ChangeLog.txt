@@ -36,3 +36,66 @@
        -made migration with SSMS,
        -updated database
 	-fixed ChangeLog.txt
+
+25.3.2019 12:00	
+	-Added some logic into the controller class
+	-Left some bugs when inserting data into the database to be fixed
+
+26.3.2019 0:24
+	-Updated the database tables to have limits
+	-Made some logic in ProductController.cs
+	-Program.cs is used as "playground" for testing code
+
+27.3.2019 0:26
+	-Fixed bugs mentioned on 25.3.2019
+	-Finished the current logic in ProductController.cs
+	-Made some logic in Display.cs and added description on the bottom
+	-Display.cs is added as "playground" for testing
+
+LATEST CHANGES:
+-------------------------------------------------------------------------------------------------------------
+
+# Changes:
+#	modified:   ChangeLog.txt
+#	modified:   Food Store/Food Store/.vs/Food Store/v15/.suo
+#	modified:   Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide
+#	modified:   Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide-shm
+#	modified:   Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide-wal
+#	new file:   Food Store/Food Store/Food Store.sln.DotSettings.user
+#	modified:   Food Store/Food Store/StartUp/Business/ProductController.cs
+#	new file:   Food Store/Food Store/StartUp/Business/StoreController.cs
+#	modified:   Food Store/Food Store/StartUp/Data/Configuration.cs
+#	modified:   Food Store/Food Store/StartUp/Data/Models/Product.cs
+#	modified:   Food Store/Food Store/StartUp/Data/Models/Store.cs
+#	deleted:    Food Store/Food Store/StartUp/Migrations/20190323142911_InitialConnection.Designer.cs
+#	deleted:    Food Store/Food Store/StartUp/Migrations/20190323142911_InitialConnection.cs
+#	deleted:    Food Store/Food Store/StartUp/Migrations/20190323144549_Updated_Initial_Connection.Designer.cs
+#	deleted:    Food Store/Food Store/StartUp/Migrations/20190323144549_Updated_Initial_Connection.cs
+#	deleted:    Food Store/Food Store/StartUp/Migrations/20190323145137_LastUpdate.cs
+#	renamed:    Food Store/Food Store/StartUp/Migrations/20190323145137_LastUpdate.Designer.cs -> Food Store/Food Store/StartUp/Migrations/20190325224351_finalMigration.Designer.cs
+#	new file:   Food Store/Food Store/StartUp/Migrations/20190325224351_finalMigration.cs
+#	modified:   Food Store/Food Store/StartUp/Migrations/FoodStoreContextModelSnapshot.cs
+#	modified:   Food Store/Food Store/StartUp/Program.cs
+#	modified:   Food Store/Food Store/StartUp/StartUp.csproj
+#	modified:   Food Store/Food Store/StartUp/Views/Display.cs
+#	modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.deps.json
+#	modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.dll
+#	modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.pdb
+#	modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.runtimeconfig.dev.json
+#	modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.csproj.CoreCompileInputs.cache
+#	modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.csproj.FileListAbsolute.txt
+#	modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.csprojResolveAssemblyReference.cache
+#	modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.dll
+#	modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.pdb
+#	new file:   Food Store/Food Store/StartUp/obj/Release/netcoreapp2.0/StartUp.AssemblyInfo.cs
+#	new file:   Food Store/Food Store/StartUp/obj/Release/netcoreapp2.0/StartUp.AssemblyInfoInputs.cache
+#	new file:   Food Store/Food Store/StartUp/obj/Release/netcoreapp2.0/StartUp.csproj.CoreCompileInputs.cache
+#	new file:   Food Store/Food Store/StartUp/obj/Release/netcoreapp2.0/StartUp.csproj.FileListAbsolute.txt
+#	new file:   Food Store/Food Store/StartUp/obj/Release/netcoreapp2.0/StartUp.dll
+#	new file:   Food Store/Food Store/StartUp/obj/Release/netcoreapp2.0/StartUp.pdb
+#	modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.cache
+#	modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.g.props
+#	modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.g.targets
+#	modified:   Food Store/Food Store/StartUp/obj/project.assets.json
+
+-------------------------------------------------------------------------------------------------------------
