@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StartUp.Data;
 
 namespace StartUp.Migrations
 {
     [DbContext(typeof(FoodStoreContext))]
-    partial class FoodStoreContextModelSnapshot : ModelSnapshot
+    [Migration("20190323161728_InitialConnectionToDataBase")]
+    partial class InitialConnectionToDataBase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -71,11 +73,8 @@ namespace StartUp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-<<<<<<< HEAD
-=======
                     b.Property<int>("Capacity");
 
->>>>>>> 9bf4e343a0697c491366b70eb14b206f8a9c24d9
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(20);

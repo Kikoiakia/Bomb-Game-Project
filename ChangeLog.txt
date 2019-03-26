@@ -30,11 +30,12 @@
 	   09:53
 	-Made some code 
 
-23.3.2019 16:52
+23.3.2019 18:20
        -Changed models, 
        -configurated DbContext,
        -made migration with SSMS,
        -updated database
+<<<<<<< HEAD
 	-fixed ChangeLog.txt
 
 25.3.2019 12:00	
@@ -99,3 +100,7 @@ LATEST CHANGES:
 #	modified:   Food Store/Food Store/StartUp/obj/project.assets.json
 
 -------------------------------------------------------------------------------------------------------------
+=======
+       -fixed ChangeLog.txt
+       -fixed migration bug
+>>>>>>> 9bf4e343a0697c491366b70eb14b206f8a9c24d9
