@@ -14,10 +14,12 @@ namespace StartUp
         static void Main(string[] args)
         {
 
-            Display display = new Display();
+             Display display = new Display();
+            //ProductController.ResetWholeProduct();
 
-            /*
-            for (int i = 0; i <= 5; i++)
+
+          /*
+            for (int i = 0; i <= 1; i++)
             {
 
                 try
@@ -52,8 +54,11 @@ namespace StartUp
           ResetProducts(products);
           */
 
+
         }
-        
+
+
+        /*
         public static void WriteProduct(Product product)
         {
             Console.WriteLine($"Id: {product.Id}\t" +
@@ -68,10 +73,12 @@ namespace StartUp
         {
             foreach (var product in products)
             {
-                ProductController.RemoveProduct(product);
+                ProductController.DeleteProduct(product.Id);
             }
             ProductController.ResetWholeProduct();
         }
-        
+        */
+
+
     }
 }

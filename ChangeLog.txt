@@ -53,7 +53,8 @@
 	-Display.cs is added as "playground" for testing
 	1:35
 	-Fixed a mistake that made the whole project crash (Sorry -K)
-
+	2:09
+	-Added a public description (Summary) to the methods in the ProductController.cs class
 LATEST CHANGES:
 -------------------------------------------------------------------------------------------------------------
 

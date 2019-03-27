@@ -7,17 +7,22 @@ namespace StartUp.Business
 {
     public class StoreController : Controller
     {
-       private SqlConnection dbCon = new SqlConnection(Configuration.ConnectionString);
-        private FoodStoreContext context;
+        private SqlConnection _dbCon = new SqlConnection(Configuration.ConnectionString);
+        private FoodStoreContext _context;
 
         public StoreController()
         {
-            this.context = new FoodStoreContext();
+            this._context = new FoodStoreContext();
         }
 
+        /// <summary>
+        /// Add a new store to the database
+        /// </summary>
+        /// <param name="store"></param>
         public void AddStore(Store store)
         {
-          
+            this._context.Stores.Add(store);
+            _context.SaveChanges();
         }
     }
 }
