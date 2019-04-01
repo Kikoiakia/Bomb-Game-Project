@@ -18,3 +18,5 @@ You can make it either a console app or an online app.
 
 Side project:
 	-If it's an online app it has options of buying products online and getting them delivered to an address.
+
+test

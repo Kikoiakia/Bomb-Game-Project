@@ -9,6 +9,12 @@ namespace StartUp.Data.Models
 {
    public class Employee
     {
+        public Employee(string fullName,double salary,int storeId)
+        {
+            this.FullName = fullName;
+            this.Salary = salary;
+            this.StoreId = storeId;
+        }
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
