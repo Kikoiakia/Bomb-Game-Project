@@ -10,8 +10,8 @@ using StartUp.Data;
 namespace StartUp.Migrations
 {
     [DbContext(typeof(FoodStoreContext))]
-    [Migration("20190325224351_finalMigration")]
-    partial class finalMigration
+    [Migration("20190401111031_InitialiseDataBase")]
+    partial class InitialiseDataBase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -80,6 +80,23 @@ namespace StartUp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Stores");
+                });
+
+            modelBuilder.Entity("StartUp.Data.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<double>("MoneyToShop");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasMaxLength(25);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("StartUp.Data.Models.Employee", b =>
