@@ -9,6 +9,11 @@ namespace StartUp.Data.Models
 {
   public class Store
     {
+
+        public Store(string name)
+        {
+            this.Name = name;
+        }
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }

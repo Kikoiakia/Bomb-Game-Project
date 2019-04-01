@@ -55,7 +55,7 @@
 	-Fixed a mistake that made the whole project crash (Sorry -K)
 	2:09
 	-Added a public description (Summary) to the methods in the ProductController.cs class
-LATEST CHANGES:
+
 -------------------------------------------------------------------------------------------------------------
 
 # Changes:
