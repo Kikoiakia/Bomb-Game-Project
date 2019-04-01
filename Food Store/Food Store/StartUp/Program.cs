@@ -28,6 +28,7 @@ namespace StartUp
             
              EmployeeController.StoreSalaryIncreasement(3,50);
 
+<<<<<<< HEAD
             //StoreController.DeleteStore(1);
             // Employee emp = new Employee("Gosho" , 500 , 1);
             // EmployeeController.AddEmployee(emp);
@@ -54,6 +55,30 @@ namespace StartUp
             //            var stock = int.Parse(cmdArgs[2]);
             //            var expiryDate = DateTime.Today;
             //            var productStoreId = int.Parse(cmdArgs[3]);
+=======
+            //Display display = new Display();
+            ProductController.ResetWholeProduct();
+>>>>>>> fec24dc9f86f4b025fa655aa999846111af1b306
+
+            //            Product product = new Product(name, price, stock, expiryDate, productStoreId);
+
+<<<<<<< HEAD
+            //            ProductController.AddProduct(product);
+=======
+
+            //  for (int i = 0; i <= 1; i++)
+            //    {
+
+            //        try
+            //        {
+            //            Console.WriteLine("Insert Name(string), Price(double), Stock(int) and ProductStoreId(int): ");
+            //            string[] cmdArgs = Console.ReadLine().Split(' ');
+
+            //            var name = cmdArgs[0];
+            //            var price = double.Parse(cmdArgs[1]);
+            //            var stock = int.Parse(cmdArgs[2]);
+            //            var expiryDate = DateTime.Today;
+            //            var productStoreId = int.Parse(cmdArgs[3]);
 
             //            Product product = new Product(name, price, stock, expiryDate, productStoreId);
 
@@ -67,6 +92,24 @@ namespace StartUp
             //    }
 
 
+            //List<Product> products = ProductController.GetAllProducts();
+            //    foreach (var product1 in products)
+            //    {
+            //        WriteProduct(product1);
+            //    }
+
+            //ResetProducts(products);
+>>>>>>> fec24dc9f86f4b025fa655aa999846111af1b306
+
+            //        }
+            //        catch(InvalidDataException e)
+            //        {
+            //            Console.WriteLine(e);
+            //        }
+            //    }
+
+
+<<<<<<< HEAD
             //List<Product> products = ProductController.GetAllProducts();
             //    foreach (var product1 in products)
             //    {
@@ -101,6 +144,30 @@ namespace StartUp
             //{
 
         }
+=======
+        }
+
+
+        
+        //public static void WriteProduct(Product product)
+        //{
+        //    Console.WriteLine($"Id: {product.Id}\t" +
+        //                      $"Name: {product.Name}\t" +
+        //                      $"Price: {product.Price}\t" +
+        //                      $"Stock: {product.Stock}\t" +
+        //                      $"ExpiryDate: {product.ExpiryDate}\t" +
+        //                      $"ProductStoreId: {product.ProductStoreId}");
+        //}
+
+        //public static void ResetProducts(List<Product> products)
+        //{
+        //    foreach (var product in products)
+        //    {
+        //        ProductController.DeleteProduct(product.Id);
+        //    }
+        //    ProductController.ResetWholeProduct();
+        //}
+>>>>>>> fec24dc9f86f4b025fa655aa999846111af1b306
         
 
 

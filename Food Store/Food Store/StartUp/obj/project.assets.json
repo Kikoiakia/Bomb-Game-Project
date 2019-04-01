@@ -1432,6 +1432,8 @@
       "type": "package",
       "path": "microsoft.netcore.app/2.0.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "Microsoft.NETCore.App.versions.txt",
         "THIRD-PARTY-NOTICES.TXT",
@@ -1710,6 +1712,8 @@
       "type": "package",
       "path": "microsoft.netcore.dotnetapphost/2.0.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "microsoft.netcore.dotnetapphost.2.0.0.nupkg.sha512",
@@ -1722,6 +1726,8 @@
       "type": "package",
       "path": "microsoft.netcore.dotnethostpolicy/2.0.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "microsoft.netcore.dotnethostpolicy.2.0.0.nupkg.sha512",
@@ -1734,6 +1740,8 @@
       "type": "package",
       "path": "microsoft.netcore.dotnethostresolver/2.0.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "microsoft.netcore.dotnethostresolver.2.0.0.nupkg.sha512",
@@ -1829,6 +1837,8 @@
       "type": "package",
       "path": "netstandard.library/2.0.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/NETStandard.Library.targets",
@@ -1957,6 +1967,7 @@
       "type": "package",
       "path": "remotion.linq/2.2.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net35/Remotion.Linq.XML",
         "lib/net35/Remotion.Linq.dll",
@@ -2104,6 +2115,7 @@
       "type": "package",
       "path": "system.collections.immutable/1.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -2126,6 +2138,7 @@
       "type": "package",
       "path": "system.componentmodel.annotations/4.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -3446,6 +3459,7 @@
       "type": "package",
       "path": "system.security.accesscontrol/4.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -3487,6 +3501,7 @@
       "type": "package",
       "path": "system.security.principal.windows/4.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -3860,6 +3875,12 @@
     }
   },
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\rkiva\\Desktop\\Softuni project\\SoftUni-Project\\Food Store\\Food Store\\StartUp\\obj\\StartUp.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",
