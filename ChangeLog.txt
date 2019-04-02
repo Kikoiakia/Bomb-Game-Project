@@ -69,6 +69,8 @@
 	-Added interfaces for the controllers
 	-Made the menus different classes for easier modifying 
 	-Fixed merging issues and bugs
+2.4.2019 10:31
+        -Delete User model, it isn't required at this time.
 
 # Changes to be committed:
 #	modified:   ChangeLog.txt
