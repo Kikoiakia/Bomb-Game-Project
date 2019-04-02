@@ -68,5 +68,46 @@
 	-Added a new Data Class Cart
 	-Added interfaces for the controllers
 	-Made the menus different classes for easier modifying 
-	
+	-Fixed merging issues and bugs
+
+# Changes to be committed:
+#	modified:   ChangeLog.txt
+#	modified:   Food Store/Food Store/.vs/Food Store/v15/.suo
+#	modified:   Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide
+#	deleted:    Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide-shm
+#	deleted:    Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide-wal
+#	new file:   Food Store/Food Store/.vs/config/applicationhost.config
+#	modified:   Food Store/Food Store/StartUp/Business/EmployeeController.cs
+#	modified:   Food Store/Food Store/StartUp/Business/ProductController.cs
+#	modified:   Food Store/Food Store/StartUp/Business/StoreController.cs
+#	new file:   Food Store/Food Store/StartUp/Data/Cart.cs
+#	modified:   Food Store/Food Store/StartUp/Data/Configuration.cs
+#	modified:   Food Store/Food Store/StartUp/Data/FoodStoreContext.cs
+#	new file:   Food Store/Food Store/StartUp/Data/Interfaces/IEmployeeController.cs
+#	new file:   Food Store/Food Store/StartUp/Data/Interfaces/IProdcutController.cs
+#	new file:   Food Store/Food Store/StartUp/Data/Interfaces/IStoreController.cs
+#	deleted:    Food Store/Food Store/StartUp/Migrations/20190327122519_MSP.Designer.cs
+#	deleted:    Food Store/Food Store/StartUp/Migrations/20190401111031_InitialiseDataBase.cs
+#	renamed:    Food Store/Food Store/StartUp/Migrations/20190401111031_InitialiseDataBase.Designer.cs -> Food Store/Food Store/StartUp/Migrations/20190401210907_NewMigrationK.Designer.cs
+#	renamed:    Food Store/Food Store/StartUp/Migrations/20190327122519_MSP.cs -> Food Store/Food Store/StartUp/Migrations/20190401210907_NewMigrationK.cs
+#	modified:   Food Store/Food Store/StartUp/Program.cs
+#	modified:   Food Store/Food Store/StartUp/Views/Display.cs
+#	new file:   Food Store/Food Store/StartUp/Views/Menus/CartMenu.cs
+#	new file:   Food Store/Food Store/StartUp/Views/Menus/MainMenu.cs
+#	new file:   Food Store/Food Store/StartUp/Views/Menus/ManagmentMenu.cs
+#	new file:   Food Store/Food Store/StartUp/Views/Menus/PurchaseMenu.cs
+#	new file:   Food Store/Food Store/StartUp/Views/Menus/StockMenu.cs
+#	new file:   Food Store/Food Store/StartUp/Views/Menus/StoreMenu.cs
+#	modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.deps.json
+#	modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.dll
+#	modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.pdb
+#	modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.runtimeconfig.dev.json
+#	modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.csproj.CoreCompileInputs.cache
+#	modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.csproj.FileListAbsolute.txt
+#	modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.dll
+#	modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.pdb
+#	modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.cache
+#	modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.g.props
+#	modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.g.targets
+#	modified:   Food Store/Food Store/StartUp/obj/project.assets.json
 
