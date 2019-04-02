@@ -10,13 +10,8 @@ using StartUp.Data;
 namespace StartUp.Migrations
 {
     [DbContext(typeof(FoodStoreContext))]
-<<<<<<< HEAD:Food Store/Food Store/StartUp/Migrations/20190327122519_MSP.Designer.cs
-    [Migration("20190327122519_MSP")]
-    partial class MSP
-=======
-    [Migration("20190401111031_InitialiseDataBase")]
-    partial class InitialiseDataBase
->>>>>>> fec24dc9f86f4b025fa655aa999846111af1b306:Food Store/Food Store/StartUp/Migrations/20190401111031_InitialiseDataBase.Designer.cs
+    [Migration("20190401210907_NewMigrationK")]
+    partial class NewMigrationK
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

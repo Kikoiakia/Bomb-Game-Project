@@ -1,13 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Web.Mvc;
 using StartUp.Data;
+using StartUp.Data.Interfaces;
 using StartUp.Data.Models;
 
 namespace StartUp.Business
 {
-    public class ProductController : Controller
+    public class ProductController : Controller, IProdcutController
     {
 
         private SqlConnection _dbCon = new SqlConnection(Configuration.ConnectionString);
@@ -26,9 +28,26 @@ namespace StartUp.Business
         {
             return context.Products.ToList();
         }
+        /// <summary>
+        /// Returns all products from given store with given id as a list
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public List<Product> GetAllProducts(int id)
+        {
+            List<Product> list = new List<Product>();
+
+            foreach (var product in GetAllProducts())
+            {
+                if(product.ProductStoreId == id) 
+                    list.Add(product);
+            }
+
+            return list;
+        }
 
         /// <summary>
-        /// Gets a specific product by given ID
+        /// Returns a specific product by given ID
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -58,6 +77,7 @@ namespace StartUp.Business
             this.context.Entry(productItem).CurrentValues.SetValues(product);
             this.context.SaveChanges();
         }
+
 
         /// <summary>
         /// Deletes product from the database by given Id

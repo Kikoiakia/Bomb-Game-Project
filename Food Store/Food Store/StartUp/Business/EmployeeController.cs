@@ -5,22 +5,29 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web.Mvc;
 using StartUp.Data;
+using StartUp.Data.Interfaces;
 using StartUp.Data.Models;
 
 namespace StartUp.Business
 {
-    class EmployeeController : Controller
+    class EmployeeController : Controller , IEmployeeController
     {
         private SqlConnection _dbCon = new SqlConnection(Configuration.ConnectionString);
         private FoodStoreContext context;
 
+        /// <summary>
+        /// Public Constructor
+        /// </summary>
         public EmployeeController()
         {
             this.context = new FoodStoreContext();
 
         }
 
-
+        /// <summary>
+        /// Adds Employee to the database
+        /// </summary>
+        /// <param name="employee"></param>
         public void AddEmployee(Employee employee)
         {
             try
@@ -38,30 +45,18 @@ namespace StartUp.Business
             
         }
 
-
-        //increases the salary of every employee in the store with this ID
-        public void StoreSalaryIncreasement(int storeId, double percent)
-        {
-            foreach (var emp in this.context.Employees)
-            {
-                if (emp.StoreId==storeId)
-                {
-                    emp.Salary = emp.Salary + emp.Salary * percent / 100;
-                    
-                }
-
-               
-            }
-            this.context.SaveChanges();
-        }
-        //decreases the salary of every employee in the store with this ID
-        public void StoreSalaryDecrease(int storeId, double percent)
+        /// <summary>
+        /// Changes Salary with given percent
+        /// </summary>
+        /// <param name="storeId"></param>
+        /// <param name="percent"></param>
+        public void ChangeSalary(int storeId, double percent)
         {
             foreach (var emp in this.context.Employees)
             {
                 if (emp.StoreId == storeId)
                 {
-                    emp.Salary = emp.Salary - emp.Salary * percent / 100;
+                    emp.Salary = emp.Salary + emp.Salary * percent / 100;
 
                 }
 
@@ -70,13 +65,24 @@ namespace StartUp.Business
             this.context.SaveChanges();
         }
 
+     
+       
 
+        /// <summary>
+        /// Returns a specific employee with given ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Employee GetEmployee(int id)
         {
             var employee = context.Employees.FirstOrDefault(x => x.Id == id);
             return employee;
         }
 
+        /// <summary>
+        /// Delets an Employee with given ID
+        /// </summary>
+        /// <param name="id"></param>
         public void DeleteEmployee(int id)
         {
             var EmplyeeItem = this.GetEmployee(id);
@@ -84,7 +90,10 @@ namespace StartUp.Business
             this.context.SaveChanges();
         }
 
-
+        /// <summary>
+        /// Resets the the id for the employees back to 0.
+        /// Use only when you clear the whole database.
+        /// </summary>
         public void ResetWholeEmployee()
         {
 

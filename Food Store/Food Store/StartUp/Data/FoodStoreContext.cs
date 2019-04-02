@@ -6,7 +6,7 @@ using StartUp.Data.Models;
 
 namespace StartUp.Data
 {
-   public class FoodStoreContext:DbContext
+   public class FoodStoreContext : DbContext
     {
         public FoodStoreContext()
         {

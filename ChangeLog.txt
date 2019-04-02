@@ -55,85 +55,18 @@
 	-Fixed a mistake that made the whole project crash (Sorry -K)
 	2:09
 	-Added a public description (Summary) to the methods in the ProductController.cs class
-<<<<<<< HEAD
+
 01.4.2019 16:42
         - Made User model
-LATEST CHANGES:
--------------------------------------------------------------------------------------------------------------
-
-# Changes:
-   modified:   Food Store/Food Store/.vs/Food Store/v15/.suo
-   modified:   Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide
-   new file:   Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide-shm
-   new file:   Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide-wal
-   deleted:    Food Store/Food Store/Food Store.sln.DotSettings.user
-   modified:   Food Store/Food Store/StartUp/Data/Configuration.cs
-   new file:   Food Store/Food Store/StartUp/Data/Constans.cs
-   modified:   Food Store/Food Store/StartUp/Data/FoodStoreContext.cs
-   new file:   Food Store/Food Store/StartUp/Data/Models/User.cs
-   deleted:    Food Store/Food Store/StartUp/Migrations/20190325224351_finalMigration.cs
-   renamed:    Food Store/Food Store/StartUp/Migrations/20190325224351_finalMigration.Designer.cs -> Food Store/Food Store/StartUp/Migrations/20190401111031_InitialiseDataBase.Designer.cs
-   new file:   Food Store/Food Store/StartUp/Migrations/20190401111031_InitialiseDataBase.cs
-   modified:   Food Store/Food Store/StartUp/Migrations/FoodStoreContextModelSnapshot.cs
-   modified:   Food Store/Food Store/StartUp/Program.cs
-   modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.deps.json
-   modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.dll
-   modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.pdb
-   modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.runtimeconfig.dev.json
-   modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.assets.cache
-   modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.csproj.CoreCompileInputs.cache
-   modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.csproj.FileListAbsolute.txt
-   modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.csprojAssemblyReference.cache
-   modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.dll
-   modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.pdb
-   modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.cache
-   modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.g.props
-   modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.g.targets
-   modified:   Food Store/Food Store/StartUp/obj/project.assets.json
-
-=======
 
 01.04.2019
 	-Added EmployeeControler
 	-Added new methods for EmployeeControler
 	
-
--------------------------------------------------------------------------------------------------------------
-
-# Changes:
-        modified:   ChangeLog.txt
-        modified:   Food Store/Food Store/.vs/Food Store/v15/.suo
-        modified:   Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide
-        new file:   Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide-shm
-        new file:   Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide-wal
-        deleted:    Food Store/Food Store/Food Store.sln.DotSettings.user
-        new file:   Food Store/Food Store/StartUp/Business/EmployeeController.cs
-        modified:   Food Store/Food Store/StartUp/Business/StoreController.cs
-        modified:   Food Store/Food Store/StartUp/Data/Configuration.cs
-        modified:   Food Store/Food Store/StartUp/Data/Models/Employee.cs
-        modified:   Food Store/Food Store/StartUp/Data/Models/Store.cs
-        deleted:    Food Store/Food Store/StartUp/Migrations/20190325224351_finalMigration.cs
-        renamed:    Food Store/Food Store/StartUp/Migrations/20190325224351_finalMigration.Designer.cs -> Food Store/Food Store/StartUp/Migrations/20190327122519_MSP.Designer.cs
-        new file:   Food Store/Food Store/StartUp/Migrations/20190327122519_MSP.cs
-        modified:   Food Store/Food Store/StartUp/Program.cs
-        modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.deps.json
-        modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.dll
-        modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.pdb
-        modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.runtimeconfig.dev.json
-        modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.assets.cache
-        modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.csproj.CoreCompileInputs.cache
-        modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.csproj.FileListAbsolute.txt
-        modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.csprojAssemblyReference.cache
-        modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.dll
-        modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.pdb
-        modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.cache
-        modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.g.props
-        modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.g.targets
-        modified:   Food Store/Food Store/StartUp/obj/project.assets.json
-        modified:   Plan.txt
->>>>>>> f17467a7ffab34e9efe064a21a078331848b7d24
-
-
--------------------------------------------------------------------------------------------------------------
-
+2.4.2019 5:07
+	-Added summary on the methods in the controllers
+	-Added a new Data Class Cart
+	-Added interfaces for the controllers
+	-Made the menus different classes for easier modifying 
+	
 

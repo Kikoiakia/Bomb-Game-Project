@@ -4,22 +4,22 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace StartUp.Migrations
 {
-    public partial class MSP : Migration
+    public partial class NewMigrationK : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Stores",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(maxLength: 20, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Stores", x => x.Id);
-                });
+                            name: "Stores",
+                            columns: table => new
+                            {
+                                Id = table.Column<int>(nullable: false)
+                                    .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                                Name = table.Column<string>(maxLength: 20, nullable: false)
+                            },
+                            constraints: table =>
+                            {
+                                table.PrimaryKey("PK_Stores", x => x.Id);
+                            });
 
             migrationBuilder.CreateTable(
                 name: "Employees",

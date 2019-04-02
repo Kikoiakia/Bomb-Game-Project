@@ -1,12 +1,14 @@
-﻿using System.Data.SqlClient;
+﻿using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web.Mvc;
 using StartUp.Data;
+using StartUp.Data.Interfaces;
 using StartUp.Data.Models;
 
 namespace StartUp.Business
 {
-    public class StoreController : Controller
+    public class StoreController : Controller , IStoreController
     {
         private SqlConnection _dbCon = new SqlConnection(Configuration.ConnectionString);
         private FoodStoreContext _context;
@@ -26,14 +28,30 @@ namespace StartUp.Business
             _context.SaveChanges();
         }
 
+        /// <summary>
+        /// Returns all stores as a list
+        /// </summary>
+        /// <returns></returns>
+        public List<Store> GetStore()
+        {
+              return _context.Stores.ToList();
+        }
 
-
+        /// <summary>
+        /// Returns a store with given ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Store GetStore(int id)
         {
             var store = _context.Stores.FirstOrDefault(x => x.Id == id);
             return store;
         }
 
+        /// <summary>
+        /// Deletes a store with given ID
+        /// </summary>
+        /// <param name="id"></param>
         public void DeleteStore(int id)
         {
             var StoreItem = this.GetStore(id);
@@ -41,7 +59,9 @@ namespace StartUp.Business
             this._context.SaveChanges();
         }
 
-
+        /// <summary>
+        /// Resets the id for the stores in the database. Use only when you are clearing the database.
+        /// </summary>
         public void ResetWholeStore()
         {
 

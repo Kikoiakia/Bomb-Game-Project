@@ -42,7 +42,6 @@ E:\Kiril\Projects\SoftUni-Project\SoftUni-Project\Food Store\Food Store\StartUp\
 E:\Kiril\Projects\SoftUni-Project\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.AssemblyInfo.cs
 E:\Kiril\Projects\SoftUni-Project\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.dll
 E:\Kiril\Projects\SoftUni-Project\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.pdb
-<<<<<<< HEAD
 C:\Users\rkiva\Desktop\Softuni project\SoftUni-Project\Food Store\Food Store\StartUp\bin\Debug\netcoreapp2.0\StartUp.deps.json
 C:\Users\rkiva\Desktop\Softuni project\SoftUni-Project\Food Store\Food Store\StartUp\bin\Debug\netcoreapp2.0\StartUp.runtimeconfig.json
 C:\Users\rkiva\Desktop\Softuni project\SoftUni-Project\Food Store\Food Store\StartUp\bin\Debug\netcoreapp2.0\StartUp.runtimeconfig.dev.json
@@ -54,7 +53,6 @@ C:\Users\rkiva\Desktop\Softuni project\SoftUni-Project\Food Store\Food Store\Sta
 C:\Users\rkiva\Desktop\Softuni project\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.AssemblyInfo.cs
 C:\Users\rkiva\Desktop\Softuni project\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.dll
 C:\Users\rkiva\Desktop\Softuni project\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.pdb
-=======
 C:\Users\Vladi\Desktop\food stores projekt\SoftUni-Project\Food Store\Food Store\StartUp\bin\Debug\netcoreapp2.0\StartUp.deps.json
 C:\Users\Vladi\Desktop\food stores projekt\SoftUni-Project\Food Store\Food Store\StartUp\bin\Debug\netcoreapp2.0\StartUp.runtimeconfig.json
 C:\Users\Vladi\Desktop\food stores projekt\SoftUni-Project\Food Store\Food Store\StartUp\bin\Debug\netcoreapp2.0\StartUp.runtimeconfig.dev.json
@@ -66,4 +64,3 @@ C:\Users\Vladi\Desktop\food stores projekt\SoftUni-Project\Food Store\Food Store
 C:\Users\Vladi\Desktop\food stores projekt\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.AssemblyInfo.cs
 C:\Users\Vladi\Desktop\food stores projekt\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.dll
 C:\Users\Vladi\Desktop\food stores projekt\SoftUni-Project\Food Store\Food Store\StartUp\obj\Debug\netcoreapp2.0\StartUp.pdb
->>>>>>> fec24dc9f86f4b025fa655aa999846111af1b306
