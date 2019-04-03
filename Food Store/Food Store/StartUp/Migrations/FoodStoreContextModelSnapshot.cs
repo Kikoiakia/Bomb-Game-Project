@@ -80,23 +80,6 @@ namespace StartUp.Migrations
                     b.ToTable("Stores");
                 });
 
-            modelBuilder.Entity("StartUp.Data.Models.User", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<double>("MoneyToShop");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasMaxLength(25);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Users");
-                });
-
             modelBuilder.Entity("StartUp.Data.Models.Employee", b =>
                 {
                     b.HasOne("StartUp.Data.Models.Store", "Store")
