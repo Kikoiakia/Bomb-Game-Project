@@ -46,6 +46,15 @@ namespace StartUp.Data
         /// Removes a product from the cart with given id
         /// </summary>
         /// <param name="id"></param>
+        public void RemoveProductFromCart(int index)
+        {
+            products.RemoveAt(index-1);
+            productQuantity.RemoveAt(index - 1);
+        }
+
+        /// <summary>
+        /// Removes all products from the cart by making a new list
+        /// </summary>
         public void RemoveProductsFromCart()
         {
             products = new List<Product>();

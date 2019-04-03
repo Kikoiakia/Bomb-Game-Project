@@ -1,7 +1,7 @@
 ﻿using System;
 using StartUp.Data;
 
-namespace StartUp.Views.Menus
+namespace StartUp.Views.Menus.User_Menus
 {
     public class CartMenu
     {
@@ -12,10 +12,16 @@ namespace StartUp.Views.Menus
             {
                 Console.WriteLine($"Cart:\n");
                 cart.ShowProductsInCart();
+                Console.WriteLine($"\nUse Remove (number) to remove an item from the cart");
                 Console.WriteLine($"\nPress B to go Back");
                 Console.Beep(500, 100);
 
                 commandArgs = Console.ReadLine().Split(' ');
+                if(commandArgs[0].ToUpper() == "REMOVE")
+                {
+                    var index = int.Parse(commandArgs[1]);
+                    cart.RemoveProductFromCart(index);
+                }
                 Console.Clear();
 
             } while (commandArgs[0].ToUpper() != "B");

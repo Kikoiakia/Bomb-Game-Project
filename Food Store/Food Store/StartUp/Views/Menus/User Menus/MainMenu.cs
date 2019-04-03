@@ -1,7 +1,7 @@
 ﻿using System;
 using StartUp.Data;
 
-namespace StartUp.Views.Menus
+namespace StartUp.Views.Menus.User_Menus
 {
     public class MainMenu
     {

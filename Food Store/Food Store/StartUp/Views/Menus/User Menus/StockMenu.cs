@@ -2,8 +2,7 @@
 using StartUp.Business;
 using StartUp.Data;
 
-
-namespace StartUp.Views.Menus
+namespace StartUp.Views.Menus.User_Menus
 {
     public class StockMenu
     {
@@ -30,7 +29,7 @@ namespace StartUp.Views.Menus
                 Console.WriteLine($"\nUse Add (Number) (Quantity) to add a product to your cart");
                 Console.WriteLine($"\nPress B to go Back");
                 commandArgs = Console.ReadLine().Split(' ');
-                if (commandArgs[0] == "Add")
+                if (commandArgs[0].ToUpper() == "ADD")
                 {
                     productId = 1;
                     var quantity = int.Parse(commandArgs[2]);
