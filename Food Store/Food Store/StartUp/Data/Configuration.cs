@@ -4,10 +4,15 @@ using System.Text;
 
 namespace StartUp.Data
 {
+    /// <summary>
+    /// Configuration class used to connect to the database
+    /// </summary>
    public static class Configuration
    {
-
-       public const string ConnectionString = "Server=DESKTOP-9F6IC4T" +
+       /// <summary>
+       /// Public string used to store the connection to the database.
+       /// </summary>
+       public const string ConnectionString = "Server=KIRIL-LAPTOP" +
                                               "\\SQLEXPRESS;" +
                                               "Database=FoodStore;" +
                                               "Integrated Security=True";

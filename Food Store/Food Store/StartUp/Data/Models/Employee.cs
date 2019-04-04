@@ -7,8 +7,17 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace StartUp.Data.Models
 {
-   public class Employee
+    /// <summary>
+    /// Public class for creating new employees
+    /// </summary>
+    public class Employee
     {
+        /// <summary>
+        /// Public constructor. Used to take employee's full name, salary and store id he/she is assinged to.
+        /// </summary>
+        /// <param name="fullName"></param>
+        /// <param name="salary"></param>
+        /// <param name="storeId"></param>
         public Employee(string fullName,double salary,int storeId)
         {
             this.FullName = fullName;

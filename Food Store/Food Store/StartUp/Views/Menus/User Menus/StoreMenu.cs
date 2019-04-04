@@ -1,12 +1,18 @@
 ﻿using System;
 using StartUp.Business;
 using StartUp.Data;
-using StartUp.Views.Menus.User_Menus;
 
-namespace StartUp.Views.Menus
+namespace StartUp.Views.Menus.User_Menus
 {
+    /// <summary>
+    /// Class used to select a store and to show it's available menu options to the user.
+    /// </summary>
     public class StoreMenu
     {
+        /// <summary>
+        /// Shows the user available stores to select from.
+        /// </summary>
+        /// <param name="cart"></param>
         public void SelectStore(Cart cart)
         {
             string command = "1";
@@ -36,6 +42,11 @@ namespace StartUp.Views.Menus
             Console.Clear();
         }
 
+        /// <summary>
+        /// Shows the user the selected store menu.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="cart"></param>
         private void ShowStoreMenu(int id, Cart cart)
         {
 
@@ -45,8 +56,6 @@ namespace StartUp.Views.Menus
             {
                 Console.WriteLine("Store Menu:\n" +
                                   "1. Select Stock\n" +
-                                  "2. Check Cart\n" +
-                                  "3. Confirm Purchase\n\n" +
                                   "B. Go Back\n");
                 Console.Beep(500, 100);
                 command = Console.ReadLine();
@@ -55,16 +64,6 @@ namespace StartUp.Views.Menus
                 if (command == "1")
                 {
                     new StockMenu().ShowStock(id, cart);
-                }
-
-                if (command == "2")
-                {
-                    new CartMenu().ShowCart(cart);
-                }
-
-                if (command == "3")
-                {
-                    new PurchaseMenu().Purchase(cart);
                 }
 
             } while (command.ToUpper() != "B");

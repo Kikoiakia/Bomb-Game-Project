@@ -3,11 +3,20 @@ using StartUp.Data;
 
 namespace StartUp.Views.Menus.User_Menus
 {
+    /// <summary>
+    /// Class used to display the cart menu.
+    /// </summary>
     public class CartMenu
     {
+        /// <summary>
+        /// Shows the cart console menu.
+        /// </summary>
+        /// <param name="cart"></param>
         public void ShowCart(Cart cart)
         {
+
             string[] commandArgs;
+            
             do
             {
                 Console.WriteLine($"Cart:\n");
@@ -15,7 +24,7 @@ namespace StartUp.Views.Menus.User_Menus
                 Console.WriteLine($"\nUse Remove (number) to remove an item from the cart");
                 Console.WriteLine($"\nPress B to go Back");
                 Console.Beep(500, 100);
-
+                
                 commandArgs = Console.ReadLine().Split(' ');
                 if(commandArgs[0].ToUpper() == "REMOVE")
                 {

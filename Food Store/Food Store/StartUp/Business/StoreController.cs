@@ -8,11 +8,24 @@ using StartUp.Data.Models;
 
 namespace StartUp.Business
 {
+    /// <summary>
+    /// Controller class to control the store table in the databse
+    /// </summary>
     public class StoreController : Controller , IStoreController
     {
-        private SqlConnection _dbCon = new SqlConnection(Configuration.ConnectionString);
-        private FoodStoreContext _context;
+        /// <summary>
+        /// Connection do be used to control the databse
+        /// </summary>
+        private readonly SqlConnection _dbCon = new SqlConnection(Configuration.ConnectionString);
 
+        /// <summary>
+        /// Context used to control the databse
+        /// </summary>
+        private readonly FoodStoreContext _context;
+
+        /// <summary>
+        /// Public contstructor. Creates new food store context.
+        /// </summary>
         public StoreController()
         {
             this._context = new FoodStoreContext();

@@ -8,14 +8,27 @@ using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 
 namespace StartUp.Data.Models
 {
+    /// <summary>
+    /// Public class for creating new products
+    /// </summary>
     public class Product
     {
-
+        /// <summary>
+        /// Empty constructor.
+        /// </summary>
         public Product()
         {
             
         }
 
+        /// <summary>
+        /// Public constructor used to take a product's name, price, how many in stock, expiry date of the product and the store ID it's assigned to.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="price"></param>
+        /// <param name="stock"></param>
+        /// <param name="expiryDate"></param>
+        /// <param name="productStoreId"></param>
         public Product(string name, double price, int stock, DateTime expiryDate, int productStoreId)
         {
             this.Name = name;

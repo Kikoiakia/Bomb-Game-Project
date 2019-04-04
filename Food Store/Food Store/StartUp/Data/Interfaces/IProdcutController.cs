@@ -3,6 +3,9 @@ using StartUp.Data.Models;
 
 namespace StartUp.Data.Interfaces
 {
+    /// <summary>
+    /// Interface for the product controller
+    /// </summary>
     public interface IProdcutController
     {
         List<Product> GetAllProducts();

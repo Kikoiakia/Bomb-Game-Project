@@ -2,6 +2,9 @@
 
 namespace StartUp.Data.Interfaces
 {
+    /// <summary>
+    /// Interface for the employee controller
+    /// </summary>
     public interface IEmployeeController
     {
         void AddEmployee(Employee employee);

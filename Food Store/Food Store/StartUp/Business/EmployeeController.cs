@@ -10,17 +10,27 @@ using StartUp.Data.Models;
 
 namespace StartUp.Business
 {
+    /// <summary>
+    /// Controller class to control the employee table in the databse
+    /// </summary>
     class EmployeeController : Controller , IEmployeeController
     {
-        private SqlConnection _dbCon = new SqlConnection(Configuration.ConnectionString);
-        private FoodStoreContext context;
+        /// <summary>
+        /// Connection do be used to control the databse
+        /// </summary>
+        private readonly SqlConnection _dbCon = new SqlConnection(Configuration.ConnectionString);
 
         /// <summary>
-        /// Public Constructor
+        /// Context used to control the databse
+        /// </summary>
+        private readonly FoodStoreContext _context;
+
+        /// <summary>
+        /// Public Constructor. Creates new food store context
         /// </summary>
         public EmployeeController()
         {
-            this.context = new FoodStoreContext();
+            this._context = new FoodStoreContext();
 
         }
 
@@ -32,8 +42,8 @@ namespace StartUp.Business
         {
             try
             {
-            this.context.Employees.Add(employee);
-            this.context.SaveChanges();
+            this._context.Employees.Add(employee);
+            this._context.SaveChanges();
 
             }
             catch (Exception e)
@@ -52,7 +62,7 @@ namespace StartUp.Business
         /// <param name="percent"></param>
         public void ChangeSalary(int storeId, double percent)
         {
-            foreach (var emp in this.context.Employees)
+            foreach (var emp in this._context.Employees)
             {
                 if (emp.StoreId == storeId)
                 {
@@ -62,7 +72,7 @@ namespace StartUp.Business
 
 
             }
-            this.context.SaveChanges();
+            this._context.SaveChanges();
         }
 
      
@@ -75,7 +85,7 @@ namespace StartUp.Business
         /// <returns></returns>
         public Employee GetEmployee(int id)
         {
-            var employee = context.Employees.FirstOrDefault(x => x.Id == id);
+            var employee = _context.Employees.FirstOrDefault(x => x.Id == id);
             return employee;
         }
 
@@ -86,8 +96,8 @@ namespace StartUp.Business
         public void DeleteEmployee(int id)
         {
             var EmplyeeItem = this.GetEmployee(id);
-            this.context.Employees.Remove(EmplyeeItem);
-            this.context.SaveChanges();
+            this._context.Employees.Remove(EmplyeeItem);
+            this._context.SaveChanges();
         }
 
         /// <summary>

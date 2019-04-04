@@ -61,6 +61,10 @@ namespace StartUp.Data
             productQuantity = new List<int>();
         }
 
+        /// <summary>
+        /// Gets the total price for all items in the cart
+        /// </summary>
+        /// <returns></returns>
         public double GetPrice()
         {
             double finalPrice = 0;
@@ -74,6 +78,9 @@ namespace StartUp.Data
             return finalPrice;
         }
 
+        /// <summary>
+        /// Uses the cart products to decrease the quanitity (stock) of products in the database.
+        /// </summary>
         public void DecreaseQuanitity()
         {
             int productId = 1;

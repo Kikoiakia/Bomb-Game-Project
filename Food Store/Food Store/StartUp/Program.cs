@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using Alba.CsConsoleFormat;
 using StartUp.Business;
 using StartUp.Data.Models;
 using StartUp.Views;
+
 
 namespace StartUp
 {
@@ -11,8 +13,8 @@ namespace StartUp
     {
         static void Main(string[] args)
         {
-          
-            Display userDisplay = new Display();
+             var userDisplay = new Display();
+
         }
     }
 }

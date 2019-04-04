@@ -7,13 +7,20 @@ using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 
 namespace StartUp.Data.Models
 {
-  public class Store
+   /// <summary>
+   /// Public class for creating new stores
+   /// </summary>
+    public class Store
     {
-
+        /// <summary>
+        /// Public controller used to make new stores with given name.
+        /// </summary>
+        /// <param name="name"></param>
         public Store(string name)
         {
             this.Name = name;
         }
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }

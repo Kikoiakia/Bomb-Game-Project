@@ -9,15 +9,27 @@ using StartUp.Data.Models;
 
 namespace StartUp.Business
 {
+    /// <summary>
+    /// Controller class to control the product table in the databse
+    /// </summary>
     public class ProductController : Controller, IProdcutController
     {
+        /// <summary>
+        /// Connection do be used to control the databse
+        /// </summary>
+        private readonly SqlConnection _dbCon = new SqlConnection(Configuration.ConnectionString);
 
-        private SqlConnection _dbCon = new SqlConnection(Configuration.ConnectionString);
-        private FoodStoreContext context;
+        /// <summary>
+        /// Context used to control the databse
+        /// </summary>
+        private readonly FoodStoreContext _context;
 
+        /// <summary>
+        /// Public constructor. Creates new food store context
+        /// </summary>
         public ProductController()
         {
-            this.context = new FoodStoreContext();
+            this._context = new FoodStoreContext();
         }
 
         /// <summary>
@@ -26,7 +38,7 @@ namespace StartUp.Business
         /// <returns></returns>
         public List<Product> GetAllProducts()
         {
-            return context.Products.ToList();
+            return _context.Products.ToList();
         }
         /// <summary>
         /// Returns all products from given store with given id as a list
@@ -53,7 +65,7 @@ namespace StartUp.Business
         /// <returns></returns>
         public Product GetProduct(int id)
         {
-            var product = context.Products.FirstOrDefault(x => x.Id == id);
+            var product = _context.Products.FirstOrDefault(x => x.Id == id);
             return product;
         }
 
@@ -63,8 +75,8 @@ namespace StartUp.Business
         /// <param name="product"></param>
         public void AddProduct(Product product)
         {
-            this.context.Products.Add(product);
-            this.context.SaveChanges();
+            this._context.Products.Add(product);
+            this._context.SaveChanges();
         }
 
         /// <summary>
@@ -74,8 +86,8 @@ namespace StartUp.Business
         public void UpdateProduct(Product product)
         {
             var productItem = this.GetProduct(product.Id);
-            this.context.Entry(productItem).CurrentValues.SetValues(product);
-            this.context.SaveChanges();
+            this._context.Entry(productItem).CurrentValues.SetValues(product);
+            this._context.SaveChanges();
         }
 
 
@@ -86,8 +98,8 @@ namespace StartUp.Business
         public void DeleteProduct(int id)
         {
             var productItem = this.GetProduct(id);
-            this.context.Products.Remove(productItem);
-            this.context.SaveChanges();
+            this._context.Products.Remove(productItem);
+            this._context.SaveChanges();
         }
 
 

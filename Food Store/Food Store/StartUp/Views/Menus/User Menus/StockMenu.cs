@@ -4,6 +4,9 @@ using StartUp.Data;
 
 namespace StartUp.Views.Menus.User_Menus
 {
+    /// <summary>
+    /// Class used to show the user the available stock menu
+    /// </summary>
     public class StockMenu
     {
         /// <summary>
@@ -17,7 +20,6 @@ namespace StartUp.Views.Menus.User_Menus
             do
             {
                 Console.WriteLine("Stock:\n");
-                Console.Beep(500, 100);
                 var products = new ProductController().GetAllProducts(id);
                 int productId = 1;
                 foreach (var product in products)
@@ -28,6 +30,8 @@ namespace StartUp.Views.Menus.User_Menus
 
                 Console.WriteLine($"\nUse Add (Number) (Quantity) to add a product to your cart");
                 Console.WriteLine($"\nPress B to go Back");
+                Console.Beep(500, 100);
+
                 commandArgs = Console.ReadLine().Split(' ');
                 if (commandArgs[0].ToUpper() == "ADD")
                 {

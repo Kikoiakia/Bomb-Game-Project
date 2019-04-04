@@ -74,19 +74,52 @@
 
 3.4.2019 3:54
 	-Made some small changes
+
+4.4.2019 6:04
+	-Made summary on the whole project
+	-Added classes for the admin menu
+	-Working product managment menu
+
 # Latest changes to be committed:
 #	modified:   Food Store/Food Store/.vs/Food Store/v15/.suo
 #	modified:   Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide
+#	deleted:    Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide-shm
+#	deleted:    Food Store/Food Store/.vs/Food Store/v15/Server/sqlite3/storage.ide-wal
+#	modified:   Food Store/Food Store/StartUp/Business/EmployeeController.cs
+#	modified:   Food Store/Food Store/StartUp/Business/ProductController.cs
+#	modified:   Food Store/Food Store/StartUp/Business/StoreController.cs
 #	modified:   Food Store/Food Store/StartUp/Data/Cart.cs
+#	modified:   Food Store/Food Store/StartUp/Data/Configuration.cs
+#	deleted:    Food Store/Food Store/StartUp/Data/Constans.cs
+#	modified:   Food Store/Food Store/StartUp/Data/FoodStoreContext.cs
+#	modified:   Food Store/Food Store/StartUp/Data/Interfaces/IEmployeeController.cs
+#	modified:   Food Store/Food Store/StartUp/Data/Interfaces/IProdcutController.cs
+#	modified:   Food Store/Food Store/StartUp/Data/Interfaces/IStoreController.cs
+#	modified:   Food Store/Food Store/StartUp/Data/Models/Employee.cs
+#	modified:   Food Store/Food Store/StartUp/Data/Models/Product.cs
+#	modified:   Food Store/Food Store/StartUp/Data/Models/Store.cs
+#	modified:   Food Store/Food Store/StartUp/Program.cs
+#	modified:   Food Store/Food Store/StartUp/StartUp.csproj
 #	modified:   Food Store/Food Store/StartUp/Views/Display.cs
-#	renamed:    Food Store/Food Store/StartUp/Views/Menus/CartMenu.cs -> Food Store/Food Store/StartUp/Views/Menus/User Menus/CartMenu.cs
-#	renamed:    Food Store/Food Store/StartUp/Views/Menus/MainMenu.cs -> Food Store/Food Store/StartUp/Views/Menus/User Menus/MainMenu.cs
-#	renamed:    Food Store/Food Store/StartUp/Views/Menus/PurchaseMenu.cs -> Food Store/Food Store/StartUp/Views/Menus/User Menus/PurchaseMenu.cs
-#	renamed:    Food Store/Food Store/StartUp/Views/Menus/StockMenu.cs -> Food Store/Food Store/StartUp/Views/Menus/User Menus/StockMenu.cs
-#	renamed:    Food Store/Food Store/StartUp/Views/Menus/StoreMenu.cs -> Food Store/Food Store/StartUp/Views/Menus/User Menus/StoreMenu.cs
+#	new file:   Food Store/Food Store/StartUp/Views/Menus/Admin Menus/EmployeeManagment.cs
+#	renamed:    Food Store/Food Store/StartUp/Views/Menus/ManagmentMenu.cs -> Food Store/Food Store/StartUp/Views/Menus/Admin Menus/ManagmentMenu.cs
+#	new file:   Food Store/Food Store/StartUp/Views/Menus/Admin Menus/ProductManagment.cs
+#	modified:   Food Store/Food Store/StartUp/Views/Menus/User Menus/CartMenu.cs
+#	modified:   Food Store/Food Store/StartUp/Views/Menus/User Menus/MainMenu.cs
+#	modified:   Food Store/Food Store/StartUp/Views/Menus/User Menus/PurchaseMenu.cs
+#	modified:   Food Store/Food Store/StartUp/Views/Menus/User Menus/StockMenu.cs
+#	modified:   Food Store/Food Store/StartUp/Views/Menus/User Menus/StoreMenu.cs
+#	modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.deps.json
 #	modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.dll
 #	modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.pdb
+#	modified:   Food Store/Food Store/StartUp/bin/Debug/netcoreapp2.0/StartUp.runtimeconfig.dev.json
 #	modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.csproj.CoreCompileInputs.cache
+#	modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.csprojResolveAssemblyReference.cache
 #	modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.dll
 #	modified:   Food Store/Food Store/StartUp/obj/Debug/netcoreapp2.0/StartUp.pdb
+#	modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.cache
+#	modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.g.props
+#	modified:   Food Store/Food Store/StartUp/obj/StartUp.csproj.nuget.g.targets
+#	modified:   Food Store/Food Store/StartUp/obj/project.assets.json
 #
+	
