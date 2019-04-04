@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StartUp.Data.Models;
 
 namespace StartUp.Data
@@ -14,9 +11,7 @@ namespace StartUp.Data
             
         }
 
-        public FoodStoreContext(DbContextOptions options)
-      
-            :base(options)
+        public FoodStoreContext(DbContextOptions options) :base(options)
         {
             
         }

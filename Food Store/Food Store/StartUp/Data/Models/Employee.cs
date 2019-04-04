@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace StartUp.Data.Models
 {
@@ -20,9 +16,9 @@ namespace StartUp.Data.Models
         /// <param name="storeId"></param>
         public Employee(string fullName,double salary,int storeId)
         {
-            this.FullName = fullName;
-            this.Salary = salary;
-            this.StoreId = storeId;
+            FullName = fullName;
+            Salary = salary;
+            StoreId = storeId;
         }
 
         [Key]

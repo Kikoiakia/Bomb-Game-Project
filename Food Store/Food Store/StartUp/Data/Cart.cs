@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using StartUp.Business;
 using StartUp.Data.Models;
 
@@ -8,25 +7,26 @@ namespace StartUp.Data
 {
     public class Cart
     {
-        private ProductController controller;
-        private List<Product> products;
-        private List<int> productQuantity;
+        private readonly ProductController _productController;
+        private List<Product> _products;
+        private List<int> _productQuantity;
         
         public Cart()
         {
-            products = new List<Product>();
-            productQuantity = new List<int>();
-            controller = new ProductController();
+            _products = new List<Product>();
+            _productQuantity = new List<int>();
+            _productController = new ProductController();
         }
-        
+
         /// <summary>
-        /// Adds a product to the cart with given quanitity
+        /// Adds a product to the cart with given quantity
         /// </summary>
-        /// <param name="id"></param>
-        public void AddToCart(Product product, int quanitity)
+        /// <param name="product"></param>
+        /// <param name="quantity"></param>
+        public void AddToCart(Product product, int quantity)
         {
-           products.Add(product);
-           productQuantity.Add(quanitity);
+           _products.Add(product);
+           _productQuantity.Add(quantity);
         }
 
         /// <summary>
@@ -35,9 +35,9 @@ namespace StartUp.Data
         public void ShowProductsInCart()
         {
             int productId = 1;
-            foreach (var product in products)
+            foreach (var product in _products)
             {
-                Console.WriteLine($"{productId}. {productQuantity[productId-1]} {product.Name} for {product.Price * productQuantity[productId-1]:f2}$");
+                Console.WriteLine($"{productId}. {_productQuantity[productId-1]} {product.Name} for {product.Price * _productQuantity[productId-1]:f2}$");
                 productId++;
             }
         }
@@ -45,11 +45,11 @@ namespace StartUp.Data
         /// <summary>
         /// Removes a product from the cart with given id
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="index"></param>
         public void RemoveProductFromCart(int index)
         {
-            products.RemoveAt(index-1);
-            productQuantity.RemoveAt(index - 1);
+            _products.RemoveAt(index-1);
+            _productQuantity.RemoveAt(index - 1);
         }
 
         /// <summary>
@@ -57,8 +57,8 @@ namespace StartUp.Data
         /// </summary>
         public void RemoveProductsFromCart()
         {
-            products = new List<Product>();
-            productQuantity = new List<int>();
+            _products = new List<Product>();
+            _productQuantity = new List<int>();
         }
 
         /// <summary>
@@ -69,9 +69,9 @@ namespace StartUp.Data
         {
             double finalPrice = 0;
             int productId = 1;
-            foreach (var product in products)
+            foreach (var product in _products)
             {
-                finalPrice += product.Price * productQuantity[productId - 1];
+                finalPrice += product.Price * _productQuantity[productId - 1];
                 productId++;
             }
 
@@ -84,12 +84,22 @@ namespace StartUp.Data
         public void DecreaseQuanitity()
         {
             int productId = 1;
-            foreach (var product in products)
+            foreach (var product in _products)
             {
-                product.Stock -= productQuantity[productId - 1];
-                controller.UpdateProduct(product);
+                product.Stock -= _productQuantity[productId - 1];
+                _productController.UpdateProduct(product);
                 productId++;
             }
+        }
+
+        /// <summary>
+        /// Checks if the cart has no products. Returns true if the count is 0.
+        /// </summary>
+        /// <returns></returns>
+        public bool IsEmpty()
+        {
+            if (_products.Count == 0) return true;
+            else return false;
         }
     }
 }

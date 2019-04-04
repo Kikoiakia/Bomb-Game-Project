@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web.Mvc;
@@ -30,7 +29,7 @@ namespace StartUp.Business
         /// </summary>
         public EmployeeController()
         {
-            this._context = new FoodStoreContext();
+            _context = new FoodStoreContext();
 
         }
 
@@ -42,11 +41,11 @@ namespace StartUp.Business
         {
             try
             {
-            this._context.Employees.Add(employee);
-            this._context.SaveChanges();
+            _context.Employees.Add(employee);
+            _context.SaveChanges();
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 Console.WriteLine("Invalid Store Id");
                 
@@ -56,27 +55,36 @@ namespace StartUp.Business
         }
 
         /// <summary>
+        /// Updates an employee from the DB
+        /// </summary>
+        /// <param name="employee"></param>
+        public void UpdateEmployee(Employee employee)
+        {
+            var newEmployee = GetEmployee(employee.Id);
+            _context.Entry(newEmployee).CurrentValues.SetValues(employee);
+            _context.SaveChanges();
+        }
+
+        /// <summary>
         /// Changes Salary with given percent
         /// </summary>
-        /// <param name="storeId"></param>
+        /// <param name="id"></param>
         /// <param name="percent"></param>
-        public void ChangeSalary(int storeId, double percent)
+        public void ChangeSalary(int id, double percent)
         {
-            foreach (var emp in this._context.Employees)
+            foreach (var emp in _context.Employees)
             {
-                if (emp.StoreId == storeId)
+                if (emp.Id == id)
                 {
                     emp.Salary = emp.Salary + emp.Salary * percent / 100;
-
+                    UpdateEmployee(emp);
                 }
 
 
             }
-            this._context.SaveChanges();
+            _context.SaveChanges();
         }
 
-     
-       
 
         /// <summary>
         /// Returns a specific employee with given ID
@@ -90,14 +98,23 @@ namespace StartUp.Business
         }
 
         /// <summary>
+        /// Returns a list of all employees in the DB
+        /// </summary>
+        /// <returns></returns>
+        public List<Employee> GetAllEmployees()
+        {
+            return _context.Employees.ToList();
+        }
+
+        /// <summary>
         /// Delets an Employee with given ID
         /// </summary>
         /// <param name="id"></param>
         public void DeleteEmployee(int id)
         {
-            var EmplyeeItem = this.GetEmployee(id);
-            this._context.Employees.Remove(EmplyeeItem);
-            this._context.SaveChanges();
+            var emplyeeItem = GetEmployee(id);
+            _context.Employees.Remove(emplyeeItem);
+            _context.SaveChanges();
         }
 
         /// <summary>
@@ -110,7 +127,7 @@ namespace StartUp.Business
             _dbCon.Open();
             using (_dbCon)
             {
-                string sqlCommand = $"USE FoodStore DBCC CHECKIDENT('Employees', Reseed, 0);";
+                const string sqlCommand = "USE FoodStore DBCC CHECKIDENT('Employees', Reseed, 0);";
                 SqlCommand command = new SqlCommand(sqlCommand, _dbCon);
                 command.ExecuteNonQuery();
             }

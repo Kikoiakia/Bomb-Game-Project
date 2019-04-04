@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Web.Mvc;
 using StartUp.Data;
 using StartUp.Data.Interfaces;
@@ -29,7 +28,7 @@ namespace StartUp.Business
         /// </summary>
         public ProductController()
         {
-            this._context = new FoodStoreContext();
+            _context = new FoodStoreContext();
         }
 
         /// <summary>
@@ -75,8 +74,8 @@ namespace StartUp.Business
         /// <param name="product"></param>
         public void AddProduct(Product product)
         {
-            this._context.Products.Add(product);
-            this._context.SaveChanges();
+            _context.Products.Add(product);
+            _context.SaveChanges();
         }
 
         /// <summary>
@@ -85,9 +84,9 @@ namespace StartUp.Business
         /// <param name="product"></param>
         public void UpdateProduct(Product product)
         {
-            var productItem = this.GetProduct(product.Id);
-            this._context.Entry(productItem).CurrentValues.SetValues(product);
-            this._context.SaveChanges();
+            var productItem = GetProduct(product.Id);
+            _context.Entry(productItem).CurrentValues.SetValues(product);
+            _context.SaveChanges();
         }
 
 
@@ -97,9 +96,9 @@ namespace StartUp.Business
         /// <param name="id"></param>
         public void DeleteProduct(int id)
         {
-            var productItem = this.GetProduct(id);
-            this._context.Products.Remove(productItem);
-            this._context.SaveChanges();
+            var productItem = GetProduct(id);
+            _context.Products.Remove(productItem);
+            _context.SaveChanges();
         }
 
 
@@ -112,7 +111,7 @@ namespace StartUp.Business
             _dbCon.Open();
             using (_dbCon)
             {
-                string sqlCommand = $"USE FoodStore DBCC CHECKIDENT('Products', Reseed, 0);";
+                const string sqlCommand = "USE FoodStore DBCC CHECKIDENT('Products', Reseed, 0);";
                 SqlCommand command = new SqlCommand(sqlCommand, _dbCon);
                 command.ExecuteNonQuery();
             }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StartUp.Views.Menus
+namespace StartUp.Views.Menus.Admin_Menus
 {
     /// <summary>
     /// Class used to show the admin menu (aka the store managment menu).
@@ -12,7 +12,7 @@ namespace StartUp.Views.Menus
         /// </summary>
         public void ShowManagmentMenu()
         {
-            var command = "";
+            string command;
             do
             {
                 Console.WriteLine("Managment Menu:\n" +
@@ -24,10 +24,12 @@ namespace StartUp.Views.Menus
                 command = Console.ReadLine();
                 Console.Clear();
 
-                if(command == "1") new ProductManagment().ShowProductMenu();
-                
+                if(command == "1") new ProductManagment().ShowProductManagment();
+                if (command == "2") new EmployeeManagment().ShowEmployeeManagment();
+                if (command == "3") new StoreManagment().ShowStoreManagment();
 
-            } while (command.ToUpper() != "B");
+
+            } while (command?.ToUpper() != "B");
         }
     }
 }

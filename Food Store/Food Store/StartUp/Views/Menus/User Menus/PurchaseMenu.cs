@@ -21,13 +21,13 @@ namespace StartUp.Views.Menus.User_Menus
                 command = "no";
             }
 
-            while(command.ToUpper() != "NO" && command.ToUpper() != "N")
+            while(command?.ToUpper() != "NO" && command?.ToUpper() != "N")
             {
                 Console.WriteLine($"Total Price: {cart.GetPrice():f2}$\n" +
-                                  $"Confirm Purchase Y/N?");
+                                  "Confirm Purchase Y/N?");
                 Console.Beep(500, 100);
                 command = Console.ReadLine();
-                if (command.ToUpper() == "Y" || command.ToUpper() == "YES")
+                if (command?.ToUpper() == "Y" || command?.ToUpper() == "YES")
                 {
                     Console.Clear();
                     Console.WriteLine("Thank you for your purchase!");

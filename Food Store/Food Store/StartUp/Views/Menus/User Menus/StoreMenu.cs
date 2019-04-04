@@ -15,30 +15,38 @@ namespace StartUp.Views.Menus.User_Menus
         /// <param name="cart"></param>
         public void SelectStore(Cart cart)
         {
-            string command = "1";
+            string command;
             do
             {
                 Console.WriteLine("Availabe Stores:\n");
-                var Stores = new StoreController().GetStore();
-                foreach (var store in Stores)
+                var stores = new StoreController().GetStore();
+                if (stores.Count == 0)
                 {
-                    Console.WriteLine($"{store.Id}. {store.Name}");
+                    Console.WriteLine("There are no available stores");
+                    Console.WriteLine("\nPress B to go Back");
+                    command = Console.ReadLine();
                 }
-
-                Console.WriteLine("\nB. Go Back\n");
-                Console.Beep(500, 100);
-                command = Console.ReadLine();
-                try
+                else
                 {
-                    ShowStoreMenu(int.Parse(command), cart);
+                    foreach (var store in stores)
+                    {
+                        Console.WriteLine($"{store.Id}. {store.Name}");
+                    }
 
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e);
-                }
+                    Console.WriteLine("\nB. Go Back\n");
+                    Console.Beep(500, 100);
+                    command = Console.ReadLine();
+                    try
+                    {
+                        ShowStoreMenu(int.Parse(command), cart);
 
-            } while (command.ToUpper() != "B");
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e);
+                    }
+                }
+            } while (command?.ToUpper() != "B");
             Console.Clear();
         }
 
@@ -47,11 +55,11 @@ namespace StartUp.Views.Menus.User_Menus
         /// </summary>
         /// <param name="id"></param>
         /// <param name="cart"></param>
-        private void ShowStoreMenu(int id, Cart cart)
+        private static void ShowStoreMenu(int id, Cart cart)
         {
 
             Console.Clear();
-            string command = "1";
+            string command;
             do
             {
                 Console.WriteLine("Store Menu:\n" +
@@ -66,7 +74,7 @@ namespace StartUp.Views.Menus.User_Menus
                     new StockMenu().ShowStock(id, cart);
                 }
 
-            } while (command.ToUpper() != "B");
+            } while (command?.ToUpper() != "B");
         }
     }
 }

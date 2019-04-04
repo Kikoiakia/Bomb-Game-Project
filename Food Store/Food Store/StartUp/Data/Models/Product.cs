@@ -1,9 +1,7 @@
 ﻿using System;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics.Contracts;
-using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
+
 
 
 namespace StartUp.Data.Models
@@ -14,14 +12,6 @@ namespace StartUp.Data.Models
     public class Product
     {
         /// <summary>
-        /// Empty constructor.
-        /// </summary>
-        public Product()
-        {
-            
-        }
-
-        /// <summary>
         /// Public constructor used to take a product's name, price, how many in stock, expiry date of the product and the store ID it's assigned to.
         /// </summary>
         /// <param name="name"></param>
@@ -31,11 +21,11 @@ namespace StartUp.Data.Models
         /// <param name="productStoreId"></param>
         public Product(string name, double price, int stock, DateTime expiryDate, int productStoreId)
         {
-            this.Name = name;
-            this.Price = price;
-            this.Stock = stock;
-            this.ExpiryDate = expiryDate;
-            this.ProductStoreId = productStoreId;
+            Name = name;
+            Price = price;
+            Stock = stock;
+            ExpiryDate = expiryDate;
+            ProductStoreId = productStoreId;
         }
  
         [Key]

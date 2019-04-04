@@ -28,7 +28,7 @@ namespace StartUp.Business
         /// </summary>
         public StoreController()
         {
-            this._context = new FoodStoreContext();
+            _context = new FoodStoreContext();
         }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace StartUp.Business
         /// <param name="store"></param>
         public void AddStore(Store store)
         {
-            this._context.Stores.Add(store);
+            _context.Stores.Add(store);
             _context.SaveChanges();
         }
 
@@ -67,9 +67,9 @@ namespace StartUp.Business
         /// <param name="id"></param>
         public void DeleteStore(int id)
         {
-            var StoreItem = this.GetStore(id);
-            this._context.Stores.Remove(StoreItem);
-            this._context.SaveChanges();
+            var storeItem = GetStore(id);
+            _context.Stores.Remove(storeItem);
+            _context.SaveChanges();
         }
 
         /// <summary>
@@ -81,11 +81,21 @@ namespace StartUp.Business
             _dbCon.Open();
             using (_dbCon)
             {
-                string sqlCommand = $"USE FoodStore DBCC CHECKIDENT('Stores', Reseed, 0);";
+                const string sqlCommand = "USE FoodStore DBCC CHECKIDENT('Stores', Reseed, 0);";
                 SqlCommand command = new SqlCommand(sqlCommand, _dbCon);
                 command.ExecuteNonQuery();
             }
         }
 
+        /// <summary>
+        /// Updates a store in the database
+        /// </summary>
+        /// <param name="store"></param>
+        public void UpdateStore(Store store)
+        {
+            var newStore = GetStore(store.Id);
+            _context.Entry(newStore).CurrentValues.SetValues(store);
+            _context.SaveChanges();
+        }
     }
 }

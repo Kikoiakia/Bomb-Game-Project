@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace StartUp.Data
+﻿namespace StartUp.Data
 {
     /// <summary>
     /// Configuration class used to connect to the database

@@ -19,21 +19,42 @@ namespace StartUp.Views.Menus.User_Menus
             
             do
             {
-                Console.WriteLine($"Cart:\n");
-                cart.ShowProductsInCart();
-                Console.WriteLine($"\nUse Remove (number) to remove an item from the cart");
-                Console.WriteLine($"\nPress B to go Back");
-                Console.Beep(500, 100);
+                Console.WriteLine("Cart:\n");
                 
-                commandArgs = Console.ReadLine().Split(' ');
-                if(commandArgs[0].ToUpper() == "REMOVE")
+                if (cart.IsEmpty())
                 {
-                    var index = int.Parse(commandArgs[1]);
-                    cart.RemoveProductFromCart(index);
+                    Console.WriteLine("Your cart is empty");
+                    Console.WriteLine("\nPress B to go Back");
+                    commandArgs = Console.ReadLine()?.Split(' ');
+                }
+                else
+                {
+                    cart.ShowProductsInCart();
+                    Console.WriteLine("\nUse Remove (number) to remove an item from the cart");
+                    Console.WriteLine("\nPress B to go Back");
+                    Console.Beep(500, 100);
+
+                    commandArgs = Console.ReadLine()?.Split(' ');
+                    if (commandArgs?[0].ToUpper() == "REMOVE")
+                    {
+                        var index = int.Parse(commandArgs[1]);
+                        try
+                        {
+                            cart.RemoveProductFromCart(index);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e);
+                            Console.WriteLine("Press B to go back");
+                            var dummy = Console.ReadLine();
+                        }
+                        
+                    }
+                    
                 }
                 Console.Clear();
 
-            } while (commandArgs[0].ToUpper() != "B");
+            } while (commandArgs?[0].ToUpper() != "B");
             
             
         }
