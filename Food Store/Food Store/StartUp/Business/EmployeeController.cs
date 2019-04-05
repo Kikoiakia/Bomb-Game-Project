@@ -12,7 +12,7 @@ namespace StartUp.Business
     /// <summary>
     /// Controller class to control the employee table in the databse
     /// </summary>
-    class EmployeeController : Controller , IEmployeeController
+    public class EmployeeController : Controller , IEmployeeController
     {
         /// <summary>
         /// Connection do be used to control the databse
@@ -23,6 +23,16 @@ namespace StartUp.Business
         /// Context used to control the databse
         /// </summary>
         private readonly FoodStoreContext _context;
+
+       
+
+        /// <summary>
+        /// Public Constructor. Creates for mocking tests.
+        /// </summary>
+        public EmployeeController(FoodStoreContext cont)
+        {
+            this._context = cont;
+        }
 
         /// <summary>
         /// Public Constructor. Creates new food store context
@@ -105,6 +115,27 @@ namespace StartUp.Business
         {
             return _context.Employees.ToList();
         }
+
+        /// <summary>
+        /// Returns a list of all employees in 
+        /// </summary>
+        /// <returns></returns>
+
+        public List<Employee> GetAllEmployeesOfStore(int id)
+        {
+            List<Employee> list = new List<Employee>();
+
+            foreach (var emoEmployeec in GetAllEmployees())
+            {
+                if (emoEmployeec.StoreId == id)
+                    list.Add(emoEmployeec);
+            }
+
+            return list;
+        }
+
+
+
 
         /// <summary>
         /// Delets an Employee with given ID

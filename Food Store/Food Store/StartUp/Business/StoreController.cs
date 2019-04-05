@@ -31,6 +31,15 @@ namespace StartUp.Business
             _context = new FoodStoreContext();
         }
 
+
+        /// <summary>
+        /// Public constructor. Creates for mocking tests.
+        /// </summary>
+        public StoreController(FoodStoreContext cont)
+        {
+            this._context = cont;
+        }
+
         /// <summary>
         /// Add a new store to the database
         /// </summary>

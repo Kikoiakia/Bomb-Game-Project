@@ -26,10 +26,23 @@ namespace StartUp.Business
         /// <summary>
         /// Public constructor. Creates new food store context
         /// </summary>
+        
+ 
         public ProductController()
         {
             _context = new FoodStoreContext();
         }
+
+        /// <summary>
+        /// Public constructor. Created for mocking tests
+        /// </summary>
+
+        public ProductController(FoodStoreContext cont)
+        {
+            this._context = cont;
+        }
+
+
 
         /// <summary>
         /// Returns all products from the database as a list

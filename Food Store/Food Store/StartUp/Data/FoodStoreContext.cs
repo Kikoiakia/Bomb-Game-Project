@@ -16,9 +16,9 @@ namespace StartUp.Data
             
         }
 
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Employee> Employees { get; set; }
-        public DbSet<Store> Stores { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Store> Stores { get; set; }
    
 
 

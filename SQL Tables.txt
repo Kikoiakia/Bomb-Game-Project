@@ -2,13 +2,96 @@ INSERT INTO Stores VALUES
 ('The Shop'),
 ('General Store'),
 ('Ghetto Store'),
-('Not Lidl');
+('Not Lidl'),
+('Billa'),
+('Metro'),
+('Kaufland'),
+('T-market'),
+('Andrews'),
+('DM'),
+('Adelly'),
+('Pallo Boticheli'),
+('Bershka'),
+('Nike'),
+('Addidas'),
+('Bobo Zander'),
+('Apple Store'),
+('Technopolis'),
+('Techno Market'),
+('Kirov High End'),
+('Asics'),
+('Buzz'),
+('Collective'),
+('Decathlon'),
+('Defonseca'),
+('Sport Depot'),
+('Skechers'),
+('Sport Open'),
+('Sport Vision'),
+('United Colors OF Beneton');
+
 
 INSERT INTO Employees VALUES
 ('Robert Borisov', 800, 1),
-('Peter Petrov', 900, 2),
-('Tyrone Shaquise', 1200, 3),
-('Petranka Petrova', 600, 4);
+('Peter Petrov', 900, 1),
+('Tyrone Shaquise', 1200, 2),
+('Petranka Petrova', 600, 3),
+('Hank Aaron', 780, 3),
+('Frank abagnale', 4500, 3),
+('Edward Abbey', 10000, 3),
+('Douglas Adams', 12000, 4),
+('Henry Adams', 5600, 4),
+('Roy Bean', 4550, 5),
+('Charles Beard', 890, 5),
+('Glenn Beck', 980, 5),
+('Saul Bellow', 3005, 6),
+('Menachem Begin', 5600, 7),
+('Chester Benigton', 11000, 7),
+('Peter Cain', 16699, 8),
+('Albert Camus', 1143, 8),
+('Ico Hazarta',20000, 9),
+('Krisko Beats',3745, 9),
+('Jewiss Carrol', 9800, 10),
+('Eric Cantona', 2333, 10),
+('Tycker Carrons', 5555, 11),
+('Sandra Cao', 11100, 12),
+('EriC dOLPHI', 14000, 13),
+('dONALD tUSK', 20003, 14),
+('jAMES Dobson', 4600, 14),
+('Lanse News', 13333, 14),
+('Marc Zucc', 20340, 15),
+('Kail Gender', 4355, 15),
+('Adriana Lima', 19999, 16),
+('Kisuk Lima', 17892, 17),
+('Kiril Gourinov', 18982, 18),
+('Vladimir Radev', 18982, 18),
+('Rumen Ivanov', 18982, 18),
+('Tosho KUkata', 6969,19),
+('Ivo Andonov', 7777, 20),
+('Petur Tudjarov', 7887, 21),
+('Zdravko Kiselov', 13451, 21),
+('Frank Hague', 17902, 22),
+('Peter Hain', 4200, 23),
+('Shan Han', 100, 24),
+('Han Asparuh', 681, 25),
+('Han Asparuh', 20681, 26),
+('Han Krum', 801, 27),
+('Andrew Jackson', 542, 28),
+('Steve Jobs', 17872, 29),
+('Bill Gates', 12932, 29),
+('Lybdob Djonson', 500, 30),
+('luben dilov', 2492, 22),
+('Osman Pasha', 5341, 23),
+('Barak Obama', 21000, 24),
+('Donald Trump', 21000, 25),
+('Angelina Jolie', 312, 26),
+('Zach Jonson', 894, 26),
+('Chef Johnson', 19001, 27),
+('Orlando Blume', 9091, 27),
+('Erica Low', 7112, 28),
+('John jONES', 2224, 30),
+('dZIVAKA Madafaka', 21000, 30),
+('Dechko Dechkov', 21000, 30);
 
 INSERT INTO Products VALUES
 ('Banana', 1.5, 60, GETDATE(), 1),
@@ -16,7 +99,62 @@ INSERT INTO Products VALUES
 ('Nike Shoes', 60, 5, GETDATE(), 1),
 ('Cucumber', 1.3, 20, GETDATE(), 2),
 ('Not Butter', 2, 15, GETDATE(), 3),
-('Pringles', 3, 10, GETDATE(), 4);
+('Pringles', 3, 11, GETDATE(), 4)
+('Tubular Shadow', 543, 12, GETDATE(), 4)
+('Radioator', 655, 11, GETDATE(), 4)
+('Curvuli', 999, 13, GETDATE(), 4)
+('Smart TV', 349, 14, GETDATE(), 5)
+('Krastavica', 0.69, 15, GETDATE(), 5)
+('Repichka', 0.8, 10, GETDATE(), 5)
+('Chio', 1.29, 2, GETDATE(), 6)
+('Dope', 420, 100, GETDATE(), 6)
+('Teniska Nike', 123, 67, GETDATE(), 7)
+('Qgodi', 3.59, 43, GETDATE(), 8)
+('Kartof', 0.57, 12, GETDATE(), 8)
+('Skateboard', 126, 32, GETDATE(), 9)
+('Plazma Lenovo', 970, 5, GETDATE(), 9)
+('Air Max 268', 200, 11, GETDATE(), 10)
+('Logtich 926', 256, 12, GETDATE(), 10)
+('Pompa', 676, 15, GETDATE(), 11)
+('Gumenka', 4.9, 16, GETDATE(), 11)
+('Marijuana', 4.20, 11, GETDATE(), 12)
+('Belo', 5.49, 4, GETDATE(), 12)
+('Guba', 3.49, 5, GETDATE(), 12)
+('Zarqdno', 4.19, 12, GETDATE(), 13)
+('Islqmist', 9.11, 16, GETDATE(), 14)
+('Ofis Stol', 222, 19, GETDATE(), 14)
+('Kiselo mleko', 1.34, 7, GETDATE(), 15)
+('Piton', 333, 28, GETDATE(), 15)
+('Kuche', 9.8, 6, GETDATE(), 16)
+('Ruffles', 3.67, 9, GETDATE(), 16)
+('Lak', 3, 14, GETDATE(), 17)
+('Spirala', 2.11, 1, GETDATE(), 17)
+('Pukanki', 1.89, 13, GETDATE(), 18)
+('Zaio-Baio', 0.35, 1, GETDATE(), 18)
+('Duvka Shok', 0.24, 56, GETDATE(), 19)
+('Hleb Dobrudja', 0.89, 13, GETDATE(), 19)
+('Orbit', 0.75, 7, GETDATE(), 20)
+('Lindor', 3.4, 8, GETDATE(), 20)
+('Djinsi', 25.69, 23, GETDATE(), 21)
+('Adidas Tubular', 162, 14, GETDATE(), 21)
+('GTX 1050-ti', 323, 24, GETDATE(), 21)
+('I5-8200k', 655.99, 29, GETDATE(), 22)
+('Slushalki', 332.44, 53, GETDATE(), 23)
+('Prahosmukachka', 355.66, 69, GETDATE(), 23)
+('krisko's Shapka', 360.99, 24, GETDATE(), 24)
+('Friturnik', 83.69, 21, GETDATE(), 24)
+('Duner fantaziq', 7.99, 29, GETDATE(), 25)
+('Blizard gift Card', 9.99, 33, GETDATE(), 25)
+('BIG Mc', 4.99, 47, GETDATE(), 26)
+('Salam', 1.67, 36, GETDATE(), 26)
+('Durex', 4.69, 54, GETDATE(), 27)
+('Qbulki', 2.87, 13, GETDATE(), 27)
+('Banichka', 1.99, 5, GETDATE(), 28)
+('Banichka', 3.99, 6, GETDATE(), 28)
+('Pringles', 3.19, 35, GETDATE(), 28)
+('Airqn', 3.9, 32, GETDATE(), 29)
+('Dominos', 2.5, 3, GETDATE(), 30)
+('Mlqko ot Cica', 1.5, 2, GETDATE(), 30);
 
 SELECT * FROM Stores;
 SELECT * FROM Employees;
