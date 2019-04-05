@@ -84,6 +84,8 @@
 	-The only thing left is the Unit test
 5.4.2019 14:42
 	-Added an sql values file
+	17:24
+	-Made the Plan.txt and README.md to be more accurate
 
 # Changes to be committed:
 #	modified:   Food Store/Food Store/.vs/Food Store/v15/.suo
