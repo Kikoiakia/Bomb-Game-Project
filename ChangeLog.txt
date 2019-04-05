@@ -84,9 +84,14 @@
 	-The only thing left is the Unit test
 5.4.2019 14:42
 	-Added an sql values file
+<<<<<<< HEAD
 5.4.2019 20:00
         -Change Sql Tables.txt (made dataset)
         -Made Nunit Tests
+=======
+	17:24
+	-Made the Plan.txt and README.md to be more accurate
+>>>>>>> 47b8862d44d8135dc1e8242059de26c22e956588
 
 # Changes to be committed:
 #	modified:   Food Store/Food Store/.vs/Food Store/v15/.suo
