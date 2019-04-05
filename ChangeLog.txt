@@ -82,6 +82,8 @@
 5.4.2019 1:29
 	-Finished the code
 	-The only thing left is the Unit test
+5.4.2019 14:42
+	-Added an sql values file
 
 # Changes to be committed:
 #	modified:   Food Store/Food Store/.vs/Food Store/v15/.suo

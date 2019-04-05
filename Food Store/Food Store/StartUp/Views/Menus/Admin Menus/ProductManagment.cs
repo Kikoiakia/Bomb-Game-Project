@@ -122,6 +122,8 @@ namespace StartUp.Views.Menus.Admin_Menus
 
                             productController.ResetWholeProduct();
                             Console.WriteLine("It is done. The whole table has been reset");
+                            Console.WriteLine("Press B to go back");
+                            var dummy = Console.ReadLine();
                         }
                     }
                 }

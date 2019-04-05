@@ -1,0 +1,23 @@
+INSERT INTO Stores VALUES
+('The Shop'),
+('General Store'),
+('Ghetto Store'),
+('Not Lidl');
+
+INSERT INTO Employees VALUES
+('Robert Borisov', 800, 1),
+('Peter Petrov', 900, 2),
+('Tyrone Shaquise', 1200, 3),
+('Petranka Petrova', 600, 4);
+
+INSERT INTO Products VALUES
+('Banana', 1.5, 60, GETDATE(), 1),
+('Orange', 1.7, 40, GETDATE(), 1),
+('Nike Shoes', 60, 5, GETDATE(), 1),
+('Cucumber', 1.3, 20, GETDATE(), 2),
+('Not Butter', 2, 15, GETDATE(), 3),
+('Pringles', 3, 10, GETDATE(), 4);
+
+SELECT * FROM Stores;
+SELECT * FROM Employees;
+SELECT * FROM Products;
